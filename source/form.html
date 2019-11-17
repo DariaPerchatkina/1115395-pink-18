@@ -42,7 +42,7 @@
         <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
           Пожалуйста, заполните форму ниже: </p>
         <fieldset>
-          <legend class="visually-hidden">Обязательные поля формы</legend>
+          <legend class="visually-hidden">ФИО участника конкурса</legend>
           <ul class="contest-form__list">
             <li class="contest-form__item">
               <label class="contest-form__label" for="appointment-family">Фамилия:</label>
@@ -97,20 +97,18 @@
           </ul>
         </fieldset>
         <fieldset>
-          <legend class="visually-hidden"></legend>
-        <ul class="contest-form__list">
-          <li class="contest-form__item">
-            <label class="contest-form__label" for="appointment-tel">Номер телефона</label>
-            <input class="contest-form__input" id="appointment-tel" type="text" name="tel"
-              placeholder="Номер, пожалуйста">
-          </li>
-          <li class="contest-form__item">
-            <label class="contest-form__label" for="appointment-email">Адрес почты</label>
-            <input class="contest-form__input" id="appointment-email" type="email" name="email"
-              placeholder="Введите почту*">
-          </li>
-        </ul>
-      </fieldset>
+          <legend class="visually-hidden">Контактные данные участника конкурса</legend>
+          <ul class="contest-form__list">
+            <li class="contest-form__item">
+              <label class="contest-form__label" for="appointment-tel">Номер телефона</label>
+              <input class="contest-form__input" id="appointment-tel" type="text" name="tel" placeholder="Номер, пожалуйста">
+            </li>
+            <li class="contest-form__item">
+              <label class="contest-form__label" for="appointment-email">Адрес почты</label>
+              <input class="contest-form__input" id="appointment-email" type="email" name="email" placeholder="Введите почту*">
+            </li>
+          </ul>
+        </fieldset>
         <fieldset class="contest-form__block form-block">
           <legend class="form-block__legend">С каким приложениеv путешествовали?</legend>
           <ul class="form-block__list">
@@ -138,9 +136,8 @@
           </ul>
         </fieldset>
 
-        <label class="form-block__label label__textarea">Опишите свои эмоции</label>
-        <textarea class="contest-form__textarea" rows="5" cols="6" name="text"
-          placeholder="Можно прямо в красках, не стесняясь в выражениях"></textarea>
+        <label class="form-block__label label__textarea" for="form-textarea">Опишите свои эмоции</label>
+        <textarea class="contest-form__textarea" rows="5" cols="6" name="text" id="form-textarea" placeholder="Можно прямо в красках, не стесняясь в выражениях"></textarea>
         <button class="contest-form__button btn-style" type="submit">Отправить форму</button>
       </form>
       <span>* - Обязательные поля</span>
