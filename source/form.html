@@ -36,64 +36,68 @@
   </header>
 
   <main class="page-main">
-    <h1 class="visually-hidden">Pink</h1>
-    <h2 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
+    <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
     <section class="contest">
       <form class="contest-form" action="https://echo.htmlacademy.ru/">
         <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
           Пожалуйста, заполните форму ниже: </p>
-        <ul class="contest-form__list">
-          <li class="contest-form__item">
-            <label class="contest-form__label" for="appointment-family">Фамилия:</label>
-            <input class="contest-form__input" id="appointment-family" type="text" name="family"
-              placeholder="Укажите фамилию*">
-          </li>
-          <li class="contest-form__item">
-            <label class="contest-form__label" for="appointment-name">Имя:</label>
-            <input class="contest-form__input" id="appointment-name" type="text" name="name"
-              placeholder="Введите ваше имя*">
-          </li>
-          <li class="contest-form__item">
-            <label class="contest-form__label" for="appointment-patronomic">Отчество:</label>
-            <input class="contest-form__input" id="appointment-patronomic" type="text" name="patronomic"
-              placeholder="Ну и отчество тоже*">
-          </li>
-        </ul>
+        <fieldset>
+          <legend class="visually-hidden"></legend>
+          <ul class="contest-form__list">
+            <li class="contest-form__item">
+              <label class="contest-form__label" for="appointment-family">Фамилия:</label>
+              <input class="contest-form__input" id="appointment-family" type="text" name="family"
+                placeholder="Укажите фамилию*">
+            </li>
+            <li class="contest-form__item">
+              <label class="contest-form__label" for="appointment-name">Имя:</label>
+              <input class="contest-form__input" id="appointment-name" type="text" name="name"
+                placeholder="Введите ваше имя*">
+            </li>
+            <li class="contest-form__item">
+              <label class="contest-form__label" for="appointment-patronymic">Отчество:</label>
+              <input class="contest-form__input" id="appointment-patronymic" type="text" name="patronymic"
+                placeholder="Ну и отчество тоже*">
+            </li>
+          </ul>
+        </fieldset>
         <fieldset class="contest-form__block form-block">
           <legend>Ваши безбашенные достижения в путешествии</legend>
           <ul class="form-block__list">
             <li class="form-block__list">
-              <input class="visually-hidden form-block__input form-block__input--checkbox" name="self"
-                id="form-self" type="checkbox" checked>
+              <input class="visually-hidden form-block__input form-block__input--checkbox" name="self" id="form-self"
+                type="checkbox" checked>
               <label class="form-block__label" for="form-self">Сделал селфи с акулой</label>
             </li>
             <li class="form-block__list">
-              <input class="visually-hidden form-block__input form-block__input--checkbox" name="self"
-                id="form-burn" type="checkbox" checked>
+              <input class="visually-hidden form-block__input form-block__input--checkbox" name="burn" id="form-burn"
+                type="checkbox" checked>
               <label class="form-block__label" for="form-burn">Обгорел на пляже</label>
             </li>
             <li class="form-block__list">
-              <input class="visually-hidden form-block__input form-block__input--checkbox" name="self"
-                id="form-chack" type="checkbox">
+              <input class="visually-hidden form-block__input form-block__input--checkbox" name="chack" id="form-chack"
+                type="checkbox">
               <label class="form-block__label" for="form-chack">Видел Чака Норриса</label>
             </li>
             <li class="form-block__list">
-              <input class="visually-hidden form-block__input form-block__input--checkbox" name="self"
+              <input class="visually-hidden form-block__input form-block__input--checkbox" name="souvenir"
                 id="form-souvenir" type="checkbox">
               <label class="form-block__label" for="form-souvenir">Накупил сувениров</label>
             </li>
             <li class="form-block__list">
-              <input class="visually-hidden form-block__input form-block__input--checkbox" name="self"
-                id="form-tower" type="checkbox" checked>
+              <input class="visually-hidden form-block__input form-block__input--checkbox" name="tower" id="form-tower"
+                type="checkbox" checked>
               <label class="form-block__label" for="form-tower">Удержал башню</label>
             </li>
             <li class="form-block__list">
-              <input class="visually-hidden form-block__input form-block__input--checkbox" name="self"
-                id="form-rout" type="checkbox">
+              <input class="visually-hidden form-block__input form-block__input--checkbox" name="rout" id="form-rout"
+                type="checkbox">
               <label class="form-block__label" for="form-rout">Разгромил отель</label>
             </li>
           </ul>
         </fieldset>
+        <fieldset>
+          <legend class="visually-hidden"></legend>
         <ul class="contest-form__list">
           <li class="contest-form__item">
             <label class="contest-form__label" for="appointment-tel">Номер телефона</label>
@@ -106,6 +110,7 @@
               placeholder="Введите почту*">
           </li>
         </ul>
+      </fieldset>
         <fieldset class="contest-form__block form-block">
           <legend class="form-block__legend">С каким приложениеv путешествовали?</legend>
           <ul class="form-block__list">
@@ -133,12 +138,12 @@
           </ul>
         </fieldset>
 
-        <p class="form-block__label label__textarea">Опишите свои эмоции</p>
+        <label class="form-block__label label__textarea">Опишите свои эмоции</label>
         <textarea class="contest-form__textarea" rows="5" cols="6" name="text"
           placeholder="Можно прямо в красках, не стесняясь в выражениях"></textarea>
         <button class="contest-form__button btn-style" type="submit">Отправить форму</button>
       </form>
-      <p>* - Обязательные поля</p>
+      <span>* - Обязательные поля</span>
     </section>
   </main>
 
