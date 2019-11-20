@@ -1,0 +1,25 @@
+@import "global/variables.less";
+@import "global/fonts.less";
+@import "blocks/main-header.less";
+@import "blocks/main-nav.less";
+@import "blocks/page-main.less";
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(100%);
+}
