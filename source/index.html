@@ -11,8 +11,8 @@
 
 <body>
   <header class="main-header">
-    <a>
-      <img class="main-header__logo" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="pink">
+    <a class="main-header__logo">
+      <img  src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="pink">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
@@ -45,26 +45,26 @@
     </div>
     <section class="applications">
       <h2 class="visually-hidden">Cкачать приложение в магазине приложений</h2>
-      <a class="applications__link btn-style" href="#" aria-label="Переход в магазин">
+      <a class="applications__link applications__btn btn-style" href="#" aria-label="Переход в магазин">
         <span>Скачать приложение</span>
       </a>
       <ul class="applications__list">
         <li class="applications__item">
           <a class="applications__link" href="https://www.apple.com/ru/ios/app-store/" aria-label="AppStore">
-            <img class="applications__link applications__link--icon" src="https://via.placeholder.com/150x150"
-              width="150" height="150" alt="Переход в магазин App Store">
+            <img class="applications__img applications__img--apple" src="img/apple-logo-svg.svg"
+              width="47" height="56" alt="Переход в магазин App Store">
           </a>
         </li>
         <li class="applications__item">
           <a class="applications__link" href="https://play.google.com/store" aria-label="GooglePlay">
-            <img class="applications__link applications__link--icon" src="https://via.placeholder.com/150x150"
-              width="150" height="150" alt="Переход в магазин Google Play">
+            <img class="applications__img applications__img--android" src="img/android-logo-svg.svg"
+              width="43" height="47" alt="Переход в магазин Google Play">
           </a>
         </li>
         <li class="applications__item">
           <a class="applications__link" href="https://www.microsoft.com/ru-ru/store/b/home" aria-label="MicrosoftStore">
-            <img class="applications__link applications__link--icon" src="https://via.placeholder.com/150x150"
-              width="150" height="150" alt="Переход в магазин Microsoft Store">
+            <img class="applications__img applications__img--microsoft" src="img/microsoft-logo-svg.svg"
+              width="44" height="41" alt="Переход в магазин Microsoft Store">
           </a>
         </li>
       </ul>
@@ -75,6 +75,7 @@
         <h2 class="visually-hidden">Преимущества </h2>
         <p class="advantages__intro">Устали от серости мегаполиса?</p>
         <p class="advantages__intro">Нам есть, что вам предложить!</p>
+        <div class="advantages__background">
         <ul class="advantages__list">
           <li class="advantages__item">
             <h3>Поднимает настроение</h3>
@@ -89,6 +90,8 @@
             <span>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</span>
           </li>
         </ul>
+        <div class="advantages__img"></div>
+      </div>
       </div>
     </section>
     <section class="review">
