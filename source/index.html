@@ -10,8 +10,9 @@
 
 <body>
   <header class="main-header">
-    <img class="main-header__logo" src="https://via.placeholder.com/150x150" width="150" height="150"
-        alt="pink">
+    <a>
+      <img class="main-header__logo" src="https://via.placeholder.com/150x150" width="150" height="150" alt="pink">
+    </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button"></button>
       <div class="main-nav__wrapper">
@@ -36,27 +37,27 @@
     <h1 class="visually-hidden">Pink</h1>
     <img class="page-main__img" src="https://via.placeholder.com/150x150" width="150" height="150" alt="phone">
     <section class="applications">
-      <h2 class="visually-hidden"></h2>Cкачать приложение в магазине приложений</h2>
-      <a class="applications__link" href="https://www.apple.com/ru/ios/app-store/" aria-label="Переход в магазин Апп Стор">
+      <h2 class="visually-hidden">Cкачать приложение в магазине приложений</h2>
+      <a class="applications__link" href="#" aria-label="Переход в магазин">
         <span>Скачать приложение</span>
       </a>
       <ul class="applications__list">
         <li class="applications__item">
           <a class="applications__link" href="https://www.apple.com/ru/ios/app-store/" aria-label="AppStore">
-            <img class="applications__link applications__link--icon" src="https://via.placeholder.com/150x150" width="150" height="150"
-              alt="Переход в магазин Апп Стор">
+            <img class="applications__link applications__link--icon" src="https://via.placeholder.com/150x150"
+              width="150" height="150" alt="Переход в магазин App Store">
           </a>
         </li>
         <li class="applications__item">
           <a class="applications__link" href="https://play.google.com/store" aria-label="GooglePlay">
-            <img class="applications__link applications__link--icon" src="https://via.placeholder.com/150x150" width="150" height="150"
-              alt="Переход в магазин Гугл Плэй">
+            <img class="applications__link applications__link--icon" src="https://via.placeholder.com/150x150"
+              width="150" height="150" alt="Переход в магазин Google Play">
           </a>
         </li>
         <li class="applications__item">
           <a class="applications__link" href="https://www.microsoft.com/ru-ru/store/b/home" aria-label="MicrosoftStore">
-            <img class="applications__link applications__link--icon" src="https://via.placeholder.com/150x150" width="150" height="150"
-            alt="Переход в магазин Майкрософт Стор">
+            <img class="applications__link applications__link--icon" src="https://via.placeholder.com/150x150"
+              width="150" height="150" alt="Переход в магазин Microsoft Store">
           </a>
         </li>
       </ul>
@@ -83,7 +84,48 @@
         </ul>
       </div>
     </section>
+    <section class="review">
+      <h2 class="visually-hidden">Отзывы полльзователей</h2>
+      <blockquote class="review__description">
+        <cite>Николай Петров</cite>
+        <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+        привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+      </blockquote>
+      <p class="review__toggles review__toggles">
+        <button class="review__toggle" type="button">1</button>
+        <button class="review__toggle" type="button">2</button>
+        <button class="review__toggle" type="button">3</button>
+      </p>
+    </section>
+    <section class="rate">
+      <h3 class="rate__title">стандарт</h3>
+      <p>3,99 USD</p>
+      <ul class="rate__list">
+        <li class="rate__item">Розовый фильтр</li>
+        <li class="rate__item">Смайлики</li>
+        <li class="rate__item">Комментарии</li>
+      </ul>
+      <p class="rate__toggles rate__toggles">
+        <button class="rate__toggle" type="button">1</button>
+        <button class="rate__toggle" type="button">2</button>
+        <button class="rate__toggle" type="button">3</button>
+      </p>
+    </section>
   </main>
+
+  <footer class="footer-main">
+    <section class="contacts">
+      <h2 class="visually-hidden">Контакты</h2>
+      <div class="contacts__container">
+        <h3>Остались вопросы? Свяжитесь с нами!</h3>
+        <p>Звоните: <a class="contacts__tel" href="tel:+78125556666"> +7 (812) 555-66-66</a></p>
+        <p>Пишите: <a class="contacts__email" href="mailto:mail@htmlacademy.ru"> mail@htmlacademy.ru </a> </p>
+        <p>Приезжайте в гости:</p>
+        <address>ул. Большая Конюшенная, 19/8</address>
+      </div>
+    </section>
+  </footer>
+
 
 </body>
 
