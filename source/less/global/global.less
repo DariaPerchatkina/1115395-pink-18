@@ -1,3 +1,7 @@
+html {
+  box-sizing: border-box;
+}
+
 body {
   //position: relative;
   min-width: @width-mobile;
@@ -6,15 +10,11 @@ body {
   font-family: @font-main;
   font-size: 16px;
   font-weight: 700;
-  line-height: 24px;
+  line-height: 1.5;
   color: #ffffff;
   background-color: white;
   //background-image: url("../img/bg-back-mobile@1x.jpg");
   //background-repeat: no-repeat;
-}
-
-html {
-  box-sizing: border-box;
 }
 
 *,
@@ -28,7 +28,7 @@ img {
   height: auto;
 }
 
-a {
+.link {
   color: inherit;
   text-decoration: none;
 }
@@ -52,4 +52,20 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.btn {
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  border: none;
+  text-align: center;
+}
+
+.container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+
 }
