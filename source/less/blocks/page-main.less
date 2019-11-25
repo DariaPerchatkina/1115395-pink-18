@@ -6,11 +6,6 @@
   background-size: 320px;
 }
 
-.white-background {
-  background-color: @white;
-  margin: 0;
-}
-
 .page-main__attachment {
   min-height: 395px;
   padding-top: 18px;
@@ -33,20 +28,58 @@
   height: 314px;
 }
 
-.page-inner {
-  position: absolute;
-  top: 313px;
-  z-index: 1;
-}
-
-.page-catalog__inner {
-  margin-top: 92px;
-}
-
-.page-catalog__inner p {
-  max-width: @width-mobile;
-  max-height: 318px;
+.page-catalog {
+  min-height: 165px;
+  padding-top: 25px;
+  padding-left: 35px;
+  padding-right: 35px;
   background-color: @white;
+  color: @header-bg;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 2.14;
+  text-align: center;
+}
+
+.page-inner__attachment {
+  padding-top: 25px;
+  margin-bottom: 73px;
+}
+
+.page-catalog__blockquote {
+  width: 280px;
+  background-color: @advantages-bg;
+  padding-top: 25px;
+  padding-bottom: 56px;
+  padding-left: 17px;
+  padding-right: 42px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.page-catalog__cite {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  color: @header-bg;
+  text-align: left;
+}
+
+.page-catalog__blockquote span {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  color: @header-bg;
+  text-align: left;
+}
+
+.page-catalog__text {
+  font-size: 14px;
+  color: @header-bg;
+  font-weight: 400;
+  text-align: left;
 }
 
 .page-main__img {
