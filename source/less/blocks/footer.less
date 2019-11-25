@@ -1,16 +1,17 @@
 .footer-main {
-  position: relative;
-  z-index: 2;
-  top: 2416px;
+  width: @width-mobile;
+  min-height: 645px;
   text-align: center;
   background-image: url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
+  background-position: 0 center;
 }
 
 .contacts {
   width: @width-mobile;
   max-height: 395px;
   background-color: @white;
+  background-position: 0 30px;
 }
 
 .contacts__container h3 {
@@ -26,6 +27,7 @@
 }
 
 .contacts__link {
+  padding: 0 25px;
   font-size: 24px;
   font-weight: 300;
   font-style: normal;
