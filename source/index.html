@@ -102,7 +102,7 @@
     <section class="review">
       <h2 class="visually-hidden">Отзывы полльзователей</h2>
       <blockquote class="review__description">
-        <cite>Николай Петров</cite>
+        <cite class ="review__cite">Николай Петров</cite>
         <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
         привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
       </blockquote>
@@ -113,8 +113,10 @@
       </p>
     </section>
     <section class="rate">
-      <h3 class="rate__title">стандарт</h3>
-      <p>3,99 USD</p>
+      <header class="rate__header">
+        <h3 class="rate__title">стандарт</h3>
+        <p>3,99 USD</p>
+      </header>
       <ul class="rate__list list">
         <li class="rate__item">Розовый фильтр</li>
         <li class="rate__item">Смайлики</li>
@@ -134,10 +136,10 @@
       <h2 class="visually-hidden">Контакты</h2>
       <div class="contacts__container">
         <h3>Остались вопросы? Свяжитесь с нами!</h3>
-        <p>Звоните: <a class="contacts__tel" href="tel:+78125556666"> +7 (812) 555-66-66</a></p>
-        <p>Пишите: <a class="contacts__email" href="mailto:mail@htmlacademy.ru"> mail@htmlacademy.ru </a> </p>
-        <p>Приезжайте в гости:</p>
-        <address>ул. Большая Конюшенная, 19/8</address>
+        <p class="contacts__title">Звоните:<br> <a class="contacts__tel  contacts__link link" href="tel:+78125556666"> +7 (812) 555-66-66</a></p>
+        <p class="contacts__title">Пишите: <a class="contacts__email  contacts__link link" href="mailto:mail@htmlacademy.ru"> mail@htmlacademy.ru </a> </p>
+        <p class="contacts__title">Приезжайте в гости:</p>
+        <address class="contacts__address contacts__link">ул. Большая Конюшенная, 19/8</address>
       </div>
     </section>
   </div>
