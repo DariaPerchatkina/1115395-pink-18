@@ -1,15 +1,19 @@
 .page-main {
-  position: absolute;
-  top: 305px;
-  z-index: 1;
   max-width: @width-mobile;
-  background-color: @main-bg;
+  //background-color: @main-bg;
   .bg-img("../img/bg-back-mobile@1x.jpg");
+  background-position: center -67px;
+  background-size: 320px;
+}
+
+.white-background {
+  background-color: @white;
+  margin: 0;
 }
 
 .page-main__attachment {
-  max-height: 462px;
-  margin-top: 86px;
+  min-height: 462px;
+  padding-top: 18px;
 }
 
 .page-main__title {
@@ -18,6 +22,12 @@
   font-size: 24px;
   font-weight: 300;
   color: @white;
+}
+
+.page-main__block::before {
+  width: @width-mobile;
+  height: 314px;
+  background-image: url("../source/img/iphone-hand-mobile.png");
 }
 
 .page-inner {
