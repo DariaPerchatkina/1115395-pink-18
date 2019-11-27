@@ -43,12 +43,15 @@
 
   <main class="page-main page-inner">
     <div class="container">
-    <section class="contest page-catalog__inner">
-    <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
-      <form class="contest-form" action="https://echo.htmlacademy.ru/">
+      <section class="page-inner__block">
+        <div class="container">
+          <section class="contest page-inner__attachment">
+            <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+          </section>
+      <form class="contest-form page-catalog" action="https://echo.htmlacademy.ru/">
         <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
           Пожалуйста, заполните форму ниже: </p>
-        <fieldset>
+        <fieldset class="contest-form__block form-block">
           <legend class="visually-hidden">ФИО участника конкурса</legend>
           <ul class="contest-form__list list">
             <li class="contest-form__item">
@@ -103,7 +106,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset>
+        <fieldset class="contest-form__block form-block">
           <legend class="visually-hidden">Контактные данные участника конкурса</legend>
           <ul class="contest-form__list list">
             <li class="contest-form__item">
@@ -142,13 +145,13 @@
             </li>
           </ul>
         </fieldset>
-
         <label class="form-block__label label__textarea" for="form-textarea">Опишите свои эмоции</label>
         <textarea class="contest-form__textarea" rows="5" cols="6" name="text" id="form-textarea" placeholder="Можно прямо в красках, не стесняясь в выражениях"></textarea>
         <button class="contest-form__button btn-style" type="submit">Отправить форму</button>
       </form>
       <span>* - Обязательные поля</span>
     </section>
+  </div>
   </div>
   </main>
 
@@ -195,7 +198,7 @@
     <div class="footer-sentence">
       <a class="footer__link link" href="https://htmlacademy.ru/intensive/adaptive">
         <p>Разработано</p>
-        <img src="../img/logo-htmlacademy.svg" width="27" height="34" alt="htmlacademy">
+        <img src="../img.logo-htmlacademy.svg" width="27" height="34" alt="htmlacademy">
       </a>
     </div>
   </div>
