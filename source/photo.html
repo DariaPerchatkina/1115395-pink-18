@@ -40,21 +40,21 @@
       </div>
     </nav>
   </header>
-  <main class="page-main">
+  <main class="page-main page-inner">
     <h1 class="visually-hidden">Фотографии в приложении Pink</h1>
-    <section class="page-inner__block">
+    <section class="page-inner page-inner__block">
       <div class="container">
-        <section class="page-inner__attachment">
+        <div class="page-inner__attachment">
           <h2 class="page-main__title">Фотографии пользователей</h2>
-        </section>
+        </div>
     <div class="page-catalog">
       <p>Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
     </div>
-    <section class="page-catalog__block">
+    <section class="page-catalog page-catalog__block">
       <ul class="page-catalog__list list">
         <li class="page-catalog__item">
           <a class="page-catalog__link link" href="#">
-            <img class="page-catalog__img" src="img/panorama-mobile@1x.jpg"
+            <img class="page-catalog__img page-catalog__img--panorama" src="img/panorama-mobile@1x.jpg"
               width="320" height="73" alt="панорама с моста в Скай-парк">
           </a>
           <blockquote class="page-catalog__blockquote">
@@ -141,23 +141,28 @@
     </section>
     </div>
     </section>
-    <section class="filter">
+    <section class="page-main__filter filter">
       <h2 class="visually-hidden">Фильтр для обработки фотографий</h2>
       <p>Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
     </section>
-      <section class="filter__post">
+      <section class="filter filter__post">
         <div class ="container">
           <h3 class="visually-hidden">Обработка фотографии</h3>
-          <img class="filter__img" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="photo-7">
+          <!--<label for=""></label>
+          <input type="file">-->
+          <img class="filter__img" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="фото для обработки">
         </div>
-        <button class="filter__pruning">
-        </button>
-        <button class="filter__fill">
-        </button>
-        <button class="filter__contrast">
-        </button>
+        <label class="filter__pruning">
+          <input type="range">
+        </label>
+        <label class="filter__fill">
+          <input type="range">
+        <label>
+        <label class="filter__contrast">
+          <input type="range">
+        <label>
         <button class="filter__btn btn-style" type="submit">Запостить </button>
-        <button class="filter__btn btn-style" type="submit">Отмена </button>
+        <button class="filter__btn btn-style" type="reset">Отмена </button>
       </section>
   </main>
 
@@ -202,7 +207,7 @@
       </div>
     </div>
     <div class="footer-sentence">
-      <a class="footer__link link" href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="footer-sentence footer-sentence__link link" href="https://htmlacademy.ru/intensive/adaptive">
         <p>Разработано</p>
         <img src="./img/logo-htmlacademy.svg" width="27" height="34" alt="htmlacademy">
       </a>
