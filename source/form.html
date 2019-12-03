@@ -13,7 +13,7 @@
   <header class="main-header">
     <div class="container">
     <a class="main-header__logo link" href="index.html">
-        <img  src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="pink">
+        <img  src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="логотип приложения Pink">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle btn" type="button" disabled>
@@ -48,9 +48,11 @@
           <div class="contest page-inner__attachment">
             <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
           </div>
-      <form class="contest-form page-catalog" action="https://echo.htmlacademy.ru/">
-        <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
-          <span>Пожалуйста, заполните форму ниже:</span></p>
+          <div class="page-catalog" id="form p">
+            <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+            <span>Пожалуйста, заполните форму ниже:</span></p>
+          </div>
+      <form class="contest-form page-catalog" action="https://echo.htmlacademy.ru/" aria-labelledby="form p">
         <fieldset class="contest-form__block form-block">
           <legend class="visually-hidden">ФИО участника конкурса</legend>
           <ul class="contest-form__list list">
@@ -198,7 +200,7 @@
     <div class="footer-sentence">
       <a class="footer__link link" href="https://htmlacademy.ru/intensive/adaptive">
         <p>Разработано</p>
-        <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="htmlacademy">
+        <img src="./img/logo-htmlacademy.svg" width="27" height="34" alt="htmlacademy">
       </a>
     </div>
   </div>
