@@ -148,21 +148,24 @@
       <section class="filter filter__post">
         <div class ="container">
           <h3 class="visually-hidden">Обработка фотографии</h3>
-          <!--<label for=""></label>
-          <input type="file">-->
+          <form action="" method="post">
+            <legend class="visually-hidden">Загрузите фотографию для обработки</legend>
+          <label for="photo"></label>
+          <input id="photo" type="file">
           <img class="filter__img" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="фото для обработки">
         </div>
-        <label class="filter__pruning">
-          <input type="range">
+        <label for="pruning" class="filter__pruning">
+          <input id="pruning" name="pruning" type="range">
         </label>
-        <label class="filter__fill">
-          <input type="range">
+        <label for="fill" class="filter__fill">
+          <input id="fill" name="fill" type="range">
         <label>
-        <label class="filter__contrast">
-          <input type="range">
+        <label for="contrast" class="filter__contrast">
+          <input id="contrast" name="contrast" type="range">
         <label>
         <button class="filter__btn btn-style" type="submit">Запостить </button>
         <button class="filter__btn btn-style" type="reset">Отмена </button>
+        </form>
       </section>
   </main>
 
