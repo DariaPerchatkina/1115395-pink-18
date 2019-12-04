@@ -1,4 +1,6 @@
 .main-header {
+  display: flex;
+  flex-direction: column;
   background-color: @header-bg;
   max-width: @width-mobile;
   min-height: 69px;
@@ -7,7 +9,27 @@
 
 .main-header__logo {
   width: 75px;
-  height: 22px;
+  height: 69px;
+}
+
+.main-nav {
+  min-height: 325px;
+}
+
+@media (min-width: @tablet-width) {
+  .nav-nav {
+    min-height: 365px;
+  }
+
+  .main-header__logo {
+    height: 109px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__logo {
+    height: 110px;
+  }
 }
 
 .main-header__logo img {
@@ -21,3 +43,4 @@
   height: 23px;
   background-color: @header-bg;
 }
+
