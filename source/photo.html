@@ -159,14 +159,14 @@
             <section class="slider">
                 <div class="container">
                   <h2 class="visually-hidden">Фильтр для фото</h2>
-                  <input class="visually-hidden slider-crop" type="radio" id="crop" name="toggle" checked >
-                  <label class="slider__controls-item slider__controls-item--pruning" for="filter__pruning" tabindex="0">
+                  <input class="slider__pruning" type="range" id="pruning" name="range" >
+                  <label class="slider__pruning-item slider__pruning-item--pruning" for="filter__pruning" tabindex="0">
                     <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
                       <path fill="none" d="M0,0h48v48H0V0z"/>
                       <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
                     </svg>
                   </label>
-                  <input class="visually-hidden slider-fill" type="radio" id="fill" name="toggle">
+                  <input class="visually-hidden slider__fill" type="range" id="fill" name="range">
                   <label class="slider__controls-item slider__controls-item--fill" for="filter__fill" tabindex="0">
                     <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
                       <path fill="none" d="M0,0h48v48H0V0z"/>
@@ -174,24 +174,13 @@
                       <rect y="40" width="48" height="3"/>
                     </svg>
                   </label>
-                  <input class="visually-hidden slider-contrast" type="radio" id="contrast" name="toggle">
+                  <input class="visually-hidden slider__contrast" type="range" id="contrast" name="range">
                   <label class="slider__controls-item slider__controls-item--contrast" for="filter__contrast" tabindex="0">
                       <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
                         <path fill="#231F20" d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
                         <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
                       </svg>
                   </label>
-                  <ul class="slider__list">
-                      <li class="slider__item">
-                          <input type="range" id="crop">
-                      </li>
-                      <li class="slider__item">
-                          <input type="range" id="fill">
-                      </li>
-                      <li class="slider__item">
-                          <input type="range" id="contrast">
-                      </li>
-                    </ul>
                 </div>
               </section>
         <button class="filter__btn btn-style" type="submit">Запостить </button>
