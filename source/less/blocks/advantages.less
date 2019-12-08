@@ -1,9 +1,3 @@
-.advantages {
-  max-width: @width-mobile;
-  max-height: 969px;
-  background-color: @white;
-}
-
 .advantages__intro {
   font-size: 24px;
   font-weight: 300;
@@ -13,8 +7,11 @@
   padding-right: 30px;
 }
 
-.advantages__background {
-  min-height: 828px;
+.advantages__gray--background {
+  padding-bottom: 255px;
+  background-image: url("../img/iphone-screen-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: bottom -40px center;
   background-color: @advantages-bg;
 }
 
@@ -33,13 +30,6 @@
   font-size: 18px;
   font-weight: 700;
   color: @black;
-}
-
-.advantages__img {
-  width: 157px;
-  height: 320px;
-  .bg-advantages("../img/iphone-screen-mobile@1x.png");
-  margin-left: 85px;
 }
 
 .advantages__item span {

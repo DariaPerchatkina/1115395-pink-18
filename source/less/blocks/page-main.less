@@ -1,8 +1,10 @@
 .page-main {
-  max-width: @width-mobile;
   .bg-img("../img/bg-back-mobile@1x.jpg");
   background-position: center -67px;
-  background-size: 320px;
+}
+
+.page-main__block {
+  background-color: @main-bg;
 }
 
 .page-main__attachment {
@@ -15,7 +17,7 @@
 
 .page-main__title {
   margin: 0;
-  padding: 0 50px;
+  padding: 18px 50px;
   text-align: center;
   font-size: 24px;
   font-weight: 300;
@@ -23,7 +25,6 @@
 }
 
 .page-main__block::before {
-  width: @width-mobile;
   height: 314px;
 }
 
@@ -45,7 +46,6 @@
 }
 
 .page-catalog__blockquote {
-  width: 280px;
   background-color: @advantages-bg;
   padding-top: 25px;
   padding-bottom: 28px;
@@ -87,9 +87,7 @@
 }
 
 .page-catalog__img--panorama {
-  max-width: 320px;
   margin: 0;
-  //align-items: center;
 }
 
 .page-catalog__link {

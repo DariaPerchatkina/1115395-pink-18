@@ -1,8 +1,12 @@
 .slider__input {
   display: none;
+  position: absolute;
+  left: calc(50% - 125px);
+  width: 250px;
+  bottom: 20px;
 }
 
-.slider__input--contrast {
+.slider__item--active .slider__input {
   display: block;
 }
 
@@ -11,4 +15,17 @@
   flex-direction: row;
   justify-content: space-between;
   list-style-type: none;
+}
+
+.slider__item {
+  display: flex;
+  position: relative;
+}
+
+.slider__img {
+  border: none;
+}
+
+.slider__svg--action {
+  fill: @pink;
 }
