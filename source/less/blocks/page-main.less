@@ -1,10 +1,19 @@
-.page-main {
+.page-main__block {
   .bg-img("../img/bg-back-mobile@1x.jpg");
   background-position: center -67px;
-}
-
-.page-main__block {
   background-color: @main-bg;
+
+  @media (min-width: 660px) {
+    .bg-img("../img/bg-back-tablet@1x.jpg");
+    background-position: center -67px;
+    background-color: @main-bg;
+  }
+
+  @media (min-width: 1200px) {
+    .bg-img("../img/bg-back-desktop@1x.jpg");
+    background-position: center -67px;
+    background-color: @main-bg;
+  }
 }
 
 .page-main__attachment {
@@ -13,6 +22,17 @@
   background-image: url("../img/iphone-hand-mobile.png");
   background-repeat: no-repeat;
   background-position-y: 109px;
+  background-position-x: center;
+
+  @media (min-width: 660px) {
+    background-image: url("../img/iphone-hand-tablet@1x.png");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: 1200px) {
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    background-repeat: no-repeat;
+  }
 }
 
 .page-main__title {
