@@ -1,6 +1,29 @@
+.contest-form {
+  background-color: @white;
+}
+
+.contest-form__list {
+  text-align: left;
+}
+
+.contest-form__item {
+  padding-bottom: 63px;
+}
+
 .contest-form__block {
   border: none;
   text-align: left;
+}
+
+.contest-form__input {
+  appearance: none;
+}
+
+.contest-form__checkbox {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background-color: @white;
 }
 
 .contest-form__input--main {
@@ -12,6 +35,7 @@
   padding-left: 20px;
   padding-right: 49px;
   border: @form-border;
+  color: @header-bg;
 }
 
 .form-block {
@@ -22,15 +46,32 @@
 .contest-form__legend {
   font-size: 14px;
   font-weight: 400;
+  padding-bottom: 42px;
   text-transform: uppercase;
   color: @pink;
   line-height: 1.29;
+  background-color: @advantages-bg;
 }
 
 .contest-form__label {
+  display: block;
+  margin-left: 90px;
   font-weight: 400;
+  font-size: 18px;
   line-height: 1.67;
   color: @header-bg;
+  text-align: left;
+}
+
+.contest-form__item .contest-form__label {
+  position: relative;
+}
+
+.contest-form__label::before {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background-color: @white;
 }
 
 .contest-form__label--main {
@@ -40,4 +81,18 @@
   line-height: 2.14;
   text-transform: uppercase;
   color: @pink;
+}
+
+.contest-form__button {
+  width: 276px;
+  height: 59px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  background-color: @form-btn;
+  color: @white;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 3px;
 }
