@@ -1,0 +1,47 @@
+.tab__form {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 660px) {
+    .tab__form {
+      flex-direction: row;
+    }
+  }
+}
+
+.tab__input {
+  display: none;
+  position: absolute;
+  left: calc(50% - 125px);
+  width: 250px;
+  bottom: 20px;
+
+  @media (min-width: 660px) {
+    .tab__input {
+      display: block;
+      position: static;
+      width: 250px;
+      bottom: 20px;
+    }
+  }
+}
+
+.tab__item--active input {
+  display: block;
+}
+
+.tab__list {
+  position: relative;
+  display: flex;
+  padding: 0 50px 60px;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.tab__img {
+  border: none;
+}
+
+.tab__svg--action {
+  fill: @pink;
+}

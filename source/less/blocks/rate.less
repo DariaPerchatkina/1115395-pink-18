@@ -1,28 +1,48 @@
 .rate {
-  display: table;
-  max-width: @width-mobile;
   text-align: center;
   color: @header-bg;
 }
 
-.rate__list {
-  display: table-row;
+.rate__item {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 2.14;
+  text-transform: uppercase;
 }
 
-.rate__item {
-  display: table-cell;
+.rate__transparent {
+  background-color: @transparent;
 }
 
 .rate__title {
-  display: table-caption;
-  caption-side: top;
   margin: 0;
   background-color: @header-bg;
   color: @white;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.rate__title span {
+  font-weight: 300;
+  font-size: 21px;
+  text-align: center;
+}
+
+.rate__svg {
+  width: 27px;
+  height: 27px;
+}
+
+.rate__svg--yes {
+  fill: @yes-green;
+}
+
+.rate__svg--no {
+  fill: @no-red;
 }
 
 .rate__header {
-  display: table-header-group;
-  background-color: @header-bg;
   color: @white;
 }
