@@ -1,0 +1,115 @@
+.page-main__block {
+  .bg-img("../img/bg-back-mobile@1x.jpg");
+  background-position: center -67px;
+  background-color: @main-bg;
+
+  @media (min-width: 660px) {
+    .bg-img("../img/bg-back-tablet@1x.jpg");
+    background-position: center -67px;
+    background-color: @main-bg;
+  }
+
+  @media (min-width: 1200px) {
+    .bg-img("../img/bg-back-desktop@1x.jpg");
+    background-position: center -67px;
+    background-color: @main-bg;
+  }
+}
+
+.page-main__attachment {
+  min-height: 395px;
+  padding-top: 18px;
+  background-image: url("../img/iphone-hand-mobile.png");
+  background-repeat: no-repeat;
+  background-position-y: 109px;
+  background-position-x: center;
+
+  @media (min-width: 660px) {
+    background-image: url("../img/iphone-hand-tablet@1x.png");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: 1200px) {
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.page-main__title {
+  margin: 0;
+  padding: 18px 50px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+  color: @white;
+}
+
+.page-main__block::before {
+  height: 314px;
+}
+
+.page-catalog {
+  min-height: 165px;
+  padding-top: 25px;
+  margin: 0;
+  background-color: @white;
+  color: @header-bg;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 2.14;
+  text-align: center;
+}
+
+.page-inner__attachment {
+  padding-top: 25px;
+  margin-bottom: 73px;
+}
+
+.page-catalog__blockquote {
+  background-color: @advantages-bg;
+  padding-top: 25px;
+  padding-bottom: 28px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  align-items: сenter;
+}
+
+.page-catalog__cite {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  color: @header-bg;
+  text-align: left;
+}
+
+.page-catalog__blockquote span {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  color: @header-bg;
+  text-align: left;
+}
+
+.page-catalog__text {
+  font-size: 14px;
+  color: @header-bg;
+  font-weight: 400;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.page-main__img {
+  padding-top: 22px;
+  padding-left: 1px;
+  margin-left: -21px;
+}
+
+.page-catalog__img--panorama {
+  margin: 0;
+}
+
+.page-catalog__link {
+  margin: 0;
+}
