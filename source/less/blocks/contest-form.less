@@ -21,12 +21,12 @@
   appearance: none;
 }
 
-.contest-form__checkbox {
-  position: absolute;
-  width: 35px;
-  height: 35px;
-  background-color: @white;
-}
+// .contest-form__checkbox {
+//   position: absolute;
+//   width: 35px;
+//   height: 35px;
+//   background-color: @white;
+// }
 
 .contest-form__input--main {
   font-size: 18px;
@@ -38,6 +38,11 @@
   padding-right: 49px;
   border: @form-border;
   color: @header-bg;
+}
+
+.contest-form__input--main:hover,
+.contest-form__input--main:focus {
+  border: @form-brd__hover;
 }
 
 .form-block {
@@ -67,7 +72,6 @@
   position: relative;
   left: 68px;
   display: block;
-  // margin-left: 90px;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.67;
@@ -75,11 +79,72 @@
   text-align: left;
 }
 
-.contest-form__item .contest-form__label {
+.contest-form__input--checkbox {
+  position: absolute;
+  top: 0px;
+  left: -48px;
+  width: 35px;
+  height: 35px;
+  background-color: @white;
+}
+.contest-form__input--checkbox + .contest-form__label::before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background-color: @white;
+  border: solid 2px @gray-br;
+  fill: @pink;
+}
+
+.contest-form__input--checkbox:checked + .contest-form__label::before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background-color: @white;
+  background-image: url("../img/icon-yes.svg");
+  border: solid 2px @gray-br;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  fill: @pink;
+}
+
+.contest-form__input--checkbox:hover + .contest-form__label::before,
+.contest-form__input--checkbox:active + .contest-form__label::before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background-color: @white;
+  background-image: url("../img/icon-yes.svg");
+  border: solid 2px @header-bg;
+  background-repeat: no-repeat;
+  // background-position-x: center;
+  // background-position-y: center;
+  fill: @pink;
+}
+
+
+.contest-form__input--checkbox:focus + .contest-form__label::before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background-color: @white;
+  // background-image: url("../img/icon-yes.svg");
+  border: solid 2px @pink;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  fill: @pink;
 }
 
 .contest-form__label::before {
-  // position: absolute;
+  position: absolute;
+  top: 0px;
+  left: -48px;
   width: 35px;
   height: 35px;
   background-color: @white;
