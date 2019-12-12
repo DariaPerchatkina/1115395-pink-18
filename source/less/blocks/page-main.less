@@ -1,18 +1,19 @@
 .page-main__block {
-  .bg-img("../img/bg-back-mobile@1x.jpg");
-  background-position: center -67px;
-  background-color: @main-bg;
+  .bg-img("bg-back-mobile@1x.jpg");
+  background-position: center -78px;
+  background-color: @white;
+  color: @header-bg;
+  background-size: 100%;
 
   @media (min-width: 660px) {
-    .bg-img("../img/bg-back-tablet@1x.jpg");
+    .bg-img("bg-back-tablet@1x.jpg");
     background-position: center -67px;
-    background-color: @main-bg;
-  }
+    background-color: @white;
 
   @media (min-width: 1200px) {
-    .bg-img("../img/bg-back-desktop@1x.jpg");
+    .bg-img("bg-back-desktop@1x.jpg");
     background-position: center -67px;
-    background-color: @main-bg;
+    background-color: @white;
   }
 }
 
@@ -51,6 +52,9 @@
 .page-catalog {
   min-height: 165px;
   padding-top: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 5px;
   margin: 0;
   background-color: @white;
   color: @header-bg;
@@ -60,9 +64,17 @@
   text-align: center;
 }
 
+.page-catalog span {
+  display: none;
+
+  @media (min-width: 660px) {
+    display: block;
+  }
+}
+
 .page-inner__attachment {
   padding-top: 25px;
-  margin-bottom: 73px;
+  margin-bottom: 29px;
 }
 
 .page-catalog__blockquote {
@@ -112,4 +124,10 @@
 
 .page-catalog__link {
   margin: 0;
+}
+
+// .page-catalog p {
+//   font-size: 14px;
+//   line-height: 2.14;
+//   // text-align: center;
 }

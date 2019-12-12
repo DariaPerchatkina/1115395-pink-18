@@ -1,3 +1,222 @@
+.contest-form {
+  background-color: @white;
+}
+
+.contest-form__list {
+  text-align: left;
+}
+
+.contest-form__item--filter {
+  padding-bottom: 63px;
+}
+
+.contest-form__item--radio {
+  padding-bottom: 40px;
+}
+
+.contest-form__block {
+  border: none;
+  text-align: left;
+  margin-bottom: 44px;
+}
+
+.contest-form__input--main {
+  appearance: none;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.67;
+  padding-top: 15px;
+  padding-bottom: 13px;
+  padding-left: 20px;
+  padding-right: 49px;
+  border: @form-border;
+  color: @header-bg;
+  outline: none;
+}
+
+.contest-form__input--main:focus,
+.contest-form__input--main:hover {
+  border: solid 2px @header-bg;
+}
+
+.contest-form__input--main:active {
+  border: solid 2px @pink;
+}
+
+.contest-form__input--radio {
+  appearance: none;
+  position: absolute;
+  top: 9px;
+  left: -52px;
+  width: 37px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: @white;
+  border: @form-border;
+}
+
+.contest-form__label--radio::before {
+  position: absolute;
+  top: 13px;
+  left: -52px;
+  width: 37px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: @white;
+  border: @form-border;
+  // color: @header-bg;
+  outline: none;
+  cursor: pointer;
+}
+
+.contest-form__input--radio + .contest-form__label::before {
+  position: absolute;
+  top: 13px;
+  left: -52px;
+  width: 35px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: @white;
+  border: @form-border;
+  background-repeat: no-repeat;
+}
+
+.contest-form__input--radio:checked + .contest-form__label::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: -52px;
+  width: 35px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: @white;
+}
+
+.form-block {
+  background-color: @advantages-bg;
+  text-align: center;
+  padding-bottom: 32px;
+  margin-bottom: 15px;
+}
+
+.contest-form__legend {
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 42px;
+  padding-bottom: 10px;
+  padding-left: 36px;
+  padding-right: 36px;
+  text-transform: uppercase;
+  color: @pink;
+  line-height: 1.29;
+}
+
+.contest-form__wrapper {
+  background-color: @advantages-bg;
+}
+
+.contest-form__label {
+  position: relative;
+  left: 68px;
+  display: block;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  color: @header-bg;
+  text-align: left;
+}
+
+.contest-form__input--checkbox {
+  position: absolute;
+  top: 0;
+  left: -48px;
+  width: 35px;
+  height: 35px;
+  background-color: @white;
+}
+
+.contest-form__label::before {
+  position: absolute;
+  top: 0;
+  left: -48px;
+  width: 35px;
+  height: 35px;
+  background-color: @white;
+}
+
+.contest-form__input--checkbox + .contest-form__label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -48px;
+  width: 35px;
+  height: 35px;
+  background-color: @white;
+  border: solid 2px @gray-br;
+  fill: @pink;
+}
+
+.contest-form__input--checkbox:checked + .contest-form__label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -48px;
+  width: 35px;
+  height: 35px;
+  background-color: @white;
+  background-image: url("../img/icon-yes.svg");
+  border: solid 2px @gray-br;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  fill: @pink;
+}
+
+.contest-form__input--checkbox:hover + .contest-form__label::before,
+.contest-form__input--checkbox:active + .contest-form__label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -48px;
+  width: 35px;
+  height: 35px;
+  background-color: @white;
+  background-image: url("../img/icon-yes.svg");
+  border: solid 2px @header-bg;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  fill: @pink;
+}
+
+.contest-form__input--checkbox:focus + .contest-form__label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -48px;
+  width: 35px;
+  height: 35px;
+  background-color: @white;
+  // background-image: url("../img/icon-yes.svg");
+  border: solid 2px @pink;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  fill: @pink;
+}
+
+.contest-form__label--main {
+  padding-left: 0;
+  margin-left: 21px;
+  padding-top: 8px;
+  padding-bottom: 6px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 2.14;
+  text-transform: uppercase;
+  color: @pink;
+}
+
 .contest-form__button {
   width: 276px;
   height: 59px;
