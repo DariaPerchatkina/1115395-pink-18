@@ -3,6 +3,12 @@
   flex-direction: column;
   background-color: @header-bg;
   box-shadow: @mh-border;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
 }
 
 .main-header__logo {
@@ -26,10 +32,4 @@
   padding-top: 22px;
   padding-bottom: 25px;
   padding-left: 20px;
-}
-
-.main-nav__toggle {
-  width: 24px;
-  height: 23px;
-  background-color: @header-bg;
 }

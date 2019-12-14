@@ -24,111 +24,111 @@
     .bg-img("bg-back-tablet@1x.jpg");
     background-position: center -67px;
     background-color: @white;
-
-    @media (min-width: 1200px) {
-      .bg-img("bg-back-desktop@1x.jpg");
-      background-position: center -67px;
-      background-color: @white;
-    }
   }
 
-  .page-main__attachment {
-    min-height: 395px;
-    padding-top: 18px;
-    background-image: url("../img/iphone-hand-mobile.png");
+@media (min-width: 1200px) {
+  .bg-img("bg-back-desktop@1x.jpg");
+  background-position: center -67px;
+  background-color: @white;
+  }
+}
+
+.page-main__attachment {
+  min-height: 395px;
+  padding-top: 18px;
+  background-image: url("../img/iphone-hand-mobile.png");
+  background-repeat: no-repeat;
+  background-position-y: 109px;
+  background-position-x: center;
+
+  @media (min-width: 660px) {
+    background-image: url("../img/iphone-hand-tablet@1x.png");
     background-repeat: no-repeat;
-    background-position-y: 109px;
-    background-position-x: center;
-
-    @media (min-width: 660px) {
-      background-image: url("../img/iphone-hand-tablet@1x.png");
-      background-repeat: no-repeat;
-    }
-
-    @media (min-width: 1200px) {
-      background-image: url("../img/iphone-hand-desktop@1x.png");
-      background-repeat: no-repeat;
-    }
   }
 
-  .page-main__title {
-    margin: 0;
-    padding: 18px 50px;
-    text-align: center;
-    font-size: 24px;
-    font-weight: 300;
-    color: @white;
+  @media (min-width: 1200px) {
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    background-repeat: no-repeat;
   }
+}
 
-  .page-main__block::before {
-    height: 314px;
+.page-main__title {
+  margin: 0;
+  padding: 18px 50px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+  color: @white;
+}
+
+.page-main__block::before {
+  height: 314px;
+}
+
+.page-catalog span {
+  display: none;
+
+  @media (min-width: 660px) {
+    display: block;
   }
+}
 
+.page-inner__attachment {
+  padding-top: 25px;
+  margin-bottom: 29px;
+}
 
-  .page-catalog span {
-    display: none;
+.page-catalog__blockquote {
+  background-color: @advantages-bg;
+  padding-top: 25px;
+  padding-bottom: 28px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  align-items: сenter;
+}
 
-    @media (min-width: 660px) {
-      display: block;
-    }
-  }
+.page-catalog__cite {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  color: @header-bg;
+  text-align: left;
+}
 
-  .page-inner__attachment {
-    padding-top: 25px;
-    margin-bottom: 29px;
-  }
+.page-catalog__blockquote span {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  color: @header-bg;
+  text-align: left;
+}
 
-  .page-catalog__blockquote {
-    background-color: @advantages-bg;
-    padding-top: 25px;
-    padding-bottom: 28px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 0;
-    margin-bottom: 20px;
-    align-items: сenter;
-  }
+.page-catalog__text {
+  font-size: 14px;
+  color: @header-bg;
+  font-weight: 400;
+  text-align: left;
+  padding-left: 20px;
+}
 
-  .page-catalog__cite {
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    color: @header-bg;
-    text-align: left;
-  }
+.page-main__img {
+  padding-top: 22px;
+  padding-left: 1px;
+  margin-left: -21px;
+}
 
-  .page-catalog__blockquote span {
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 300;
-    color: @header-bg;
-    text-align: left;
-  }
+.page-catalog__img--panorama {
+  margin: 0;
+}
 
-  .page-catalog__text {
-    font-size: 14px;
-    color: @header-bg;
-    font-weight: 400;
-    text-align: left;
-    padding-left: 20px;
-  }
+.page-catalog__link {
+  margin: 0;
+}
 
-  .page-main__img {
-    padding-top: 22px;
-    padding-left: 1px;
-    margin-left: -21px;
-  }
-
-  .page-catalog__img--panorama {
-    margin: 0;
-  }
-
-  .page-catalog__link {
-    margin: 0;
-  }
-
-  .page-catalog p {
-    font-size: 14px;
-    line-height: 2.14;
-    text-align: center;
-  }
+.page-catalog p {
+  font-size: 14px;
+  line-height: 2.14;
+  text-align: center;
+}
