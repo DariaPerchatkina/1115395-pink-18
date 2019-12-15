@@ -21,15 +21,20 @@
   background-size: 100%;
 
   @media (min-width: 660px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
     .bg-img("bg-back-tablet@1x.jpg");
-    background-position: center -67px;
+    background-position: center -2px;
     background-color: @white;
   }
 
-@media (min-width: 1200px) {
-  .bg-img("bg-back-desktop@1x.jpg");
-  background-position: center -67px;
-  background-color: @white;
+  @media (min-width: 1200px) {
+    .bg-img("bg-back-desktop@1x.jpg");
+    background-position: center -119px;
+    background-color: @white;
+    margin-top: -729px;
   }
 }
 
@@ -44,21 +49,29 @@
   @media (min-width: 660px) {
     background-image: url("../img/iphone-hand-tablet@1x.png");
     background-repeat: no-repeat;
+    background-size: 545px;
   }
 
   @media (min-width: 1200px) {
     background-image: url("../img/iphone-hand-desktop@1x.png");
     background-repeat: no-repeat;
+    background-position-y: 0;
+    background-position-x: 515px;
+    background-size: 645px;
   }
 }
 
 .page-main__title {
   margin: 0;
-  padding: 18px 50px;
+  padding: 64px 50px;
   text-align: center;
   font-size: 24px;
   font-weight: 300;
   color: @white;
+
+  @media (min-width: @desktop-width) {
+    padding: 30px 0;
+  }
 }
 
 .page-main__block::before {

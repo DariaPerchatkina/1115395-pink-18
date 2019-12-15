@@ -1,17 +1,11 @@
 .main-nav__wrapper {
   background-color: @header-bg;
 
-  @media (min-width: @tablet-width) {
-    display: flex;
-    justify-content: space-between;
-    width: 660px;
-    margin: 0 auto;
-  }
-
   @media (min-width: @desktop-width) {
     width: 940px;
     display: flex;
     justify-content: space-between;
+    background-color: @transparent;
   }
 }
 
@@ -19,13 +13,14 @@
   width: 24px;
   height: 23px;
   background-color: @header-bg;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
 
-
 .main-nav {
-  width: 320px;
   margin: 0 auto;
-  min-height: 325px;
 
   @media (min-width: @tablet-width) {
     width: auto;
@@ -53,7 +48,7 @@
 }
 
 .site-list {
-  // min-height: 255px;
+  min-height: 255px;
   color: @white;
 
   @media (min-width: @desktop-width) {
@@ -74,6 +69,11 @@
   border-bottom: 1px solid @black;
 
   @media (min-width: @desktop-width) {
+    font-weight: 400;
+    padding-left: 40px;
+    padding-top: 44px;
+    padding-bottom: 47px;
+    text-transform: none;
     border-bottom: none;
     border-top: none;
   }
