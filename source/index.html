@@ -12,67 +12,71 @@
 
 <body>
   <header class="main-header">
-    <a class="main-header__logo link">
-      <img  src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="логотип приложения Pink">
-    </a>
-    <nav class="main-nav">
-      <div class="container">
-      <button class="main-nav__toggle btn" type="button" disabled>
-          <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
-            <path fill="#FFFFFF" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
-          </svg>
-      </button>
+    <div class="container">
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list list">
-          <li class="site-list__item">
-            <a>Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a class ="site-list__link link" href="photo.html">Фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a  class ="site-list__link link" href="form.html">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a  class ="site-list__link link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </li>
-        </ul>
+        <div class="main-header__wrapper">
+          <a class="main-header__logo link" href="index.html" aria-label="Переход на главную страницу">
+            <img class="visually-hidden" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="логотип приложения Pink">
+          </a>
+        </div>
+        <nav class="main-nav">
+          <ul class="main-nav__list site-list  list">
+            <li class="site-list__item">
+              <a class ="site-list__link link">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class ="site-list__link link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a class ="site-list__link link" href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a class ="site-list__link link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+          <button class="main-nav__trigger" type="button" disabled>
+            <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
+              <path fill="#FFFFFF" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
+            </svg>
+          </button>
+        </nav>
       </div>
     </div>
-  </nav>
   </header>
 
   <main class="page-main">
-    <div class="container page-main__block">
-        <h1 class="page-main__attachment page-main__title">Взгляни на жизнь иначе!</h1>
-      <section class="applications">
-        <h2 class="visually-hidden">Cкачать приложение в магазине приложений</h2>
-        <a class="applications__link applications__btn btn-style link" href="#" aria-label="Переход в магазин">
-          Скачать приложение
-        </a>
-        <ul class="applications__list list">
-          <li class="applications__item">
-            <a class="applications__link link" href="https://www.apple.com/ru/ios/app-store/" aria-label="AppStore">
-              <img class="applications__img applications__img--apple" src="img/apple-logo-svg.svg"
-                width="47" height="56" alt="Переход в магазин App Store">
-            </a>
-          </li>
-          <li class="applications__item">
-            <a class="applications__link link" href="https://play.google.com/store" aria-label="GooglePlay">
-              <img class="applications__img applications__img--android" src="img/android-logo-svg.svg"
-                width="43" height="47" alt="Переход в магазин Google Play">
-            </a>
-          </li>
-          <li class="applications__item">
-            <a class="applications__link link" href="https://www.microsoft.com/ru-ru/store/b/home" aria-label="MicrosoftStore">
-              <img class="applications__img applications__img--microsoft" src="img/microsoft-logo-svg.svg"
-                width="44" height="41" alt="Переход в магазин Microsoft Store">
-            </a>
-          </li>
-        </ul>
-        <p class="applications__discription">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-      </section>
+    <section class="page-main__block">
+      <div class="container">
+      <h1 class="page-main__attachment page-main__title">Взгляни на жизнь иначе!</h1>
+    <div class="applications">
+      <h2 class="visually-hidden">Cкачать приложение в магазине приложений</h2>
+      <a class="applications__link applications__btn btn-style link" href="#" aria-label="Переход в магазин">
+        Скачать приложение
+      </a>
+      <ul class="applications__list list">
+        <li class="applications__item">
+          <a class="applications__link link" href="https://www.apple.com/ru/ios/app-store/" aria-label="AppStore">
+            <img class="applications__img applications__img--apple" src="img/apple-logo-svg.svg"
+              width="47" height="56" alt="Переход в магазин App Store">
+          </a>
+        </li>
+        <li class="applications__item">
+          <a class="applications__link link" href="https://play.google.com/store" aria-label="GooglePlay">
+            <img class="applications__img applications__img--android" src="img/android-logo-svg.svg"
+              width="43" height="47" alt="Переход в магазин Google Play">
+          </a>
+        </li>
+        <li class="applications__item">
+          <a class="applications__link link" href="https://www.microsoft.com/ru-ru/store/b/home" aria-label="MicrosoftStore">
+            <img class="applications__img applications__img--microsoft" src="img/microsoft-logo-svg.svg"
+              width="44" height="41" alt="Переход в магазин Microsoft Store">
+          </a>
+        </li>
+      </ul>
+      <p class="applications__discription">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
     </div>
+  </div>
+  </section>
     <section class="advantages">
       <div class="container">
       <h2 class="visually-hidden">Преимущества </h2>

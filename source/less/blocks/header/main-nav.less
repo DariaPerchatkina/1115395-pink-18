@@ -1,9 +1,102 @@
 .main-nav__wrapper {
   background-color: @header-bg;
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+    display: flex;
+    justify-content: space-between;
+    background-color: @transparent;
+  }
+}
+
+// .main-nav__toggle {
+//   position: absolute;
+//   top: 0;
+//   right: -4px;
+//   width: 23px;
+//   height: 24px;
+//   padding: 24px 20px;
+//   border: none;
+//   background-color: @transparent;
+
+//   @media (min-width: @desktop-width) {
+//     display: none;
+//   }
+// }
+
+.main-nav {
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 110px;
+  }
+}
+
+.main-nav__list {
+  min-height: 69px;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
 }
 
 .site-list {
+  min-height: 255px;
   color: @white;
+
+  @media (min-width: @desktop-width) {
+    width: 619px;
+    min-height: 110px;
+  }
+}
+
+.main-nav__item {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: normal;
+  text-align: center;
+  text-transform: uppercase;
+  border-top: 1px solid @gray;
+  border-bottom: 1px solid @black;
+
+  @media (min-width: @desktop-width) {
+    font-weight: 400;
+    padding-left: 40px;
+    padding-top: 44px;
+    padding-bottom: 47px;
+    text-transform: none;
+    border-bottom: none;
+    border-top: none;
+  }
+}
+
+.main-nav__trigger{
+  position: absolute;
+  top: 0;
+  right: 25px;
+  width: 23px;
+  height: 24px;
+  padding: 24px 20px;
+  border: none;
+  background-color: @transparent;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
 
 .site-list__item {
@@ -16,6 +109,16 @@
   text-transform: uppercase;
   border-top: 1px solid @gray;
   border-bottom: 1px solid @black;
+
+  @media (min-width: @desktop-width) {
+    font-weight: 400;
+    padding-left: 40px;
+    padding-top: 44px;
+    padding-bottom: 47px;
+    text-transform: none;
+    border-bottom: none;
+    border-top: none;
+  }
 }
 
 .site-list__link {

@@ -1,7 +1,15 @@
 .applications {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
   background-color: @main-bg;
   padding-top: 48px;
   align-items: center;
+  color: @white;
+
+  @media (min-width: @tablet-width) {
+    background-color: @transparent;
+  }
 }
 
 .applications__link {

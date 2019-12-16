@@ -62,7 +62,17 @@ input[type="radio"].visually-hidden {
 
 .container {
   min-width: 320px;
-  margin: 0 auto;
+  margin: 0;
   text-align: center;
   box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    min-width: 660px;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 940px;
+    margin: 0 auto;
+  }
 }
