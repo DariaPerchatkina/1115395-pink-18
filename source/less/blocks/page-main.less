@@ -13,46 +13,24 @@
   text-align: center;
 }
 
-.page-main__block {
-  .bg-img("bg-back-mobile@1x.jpg");
-  background-position: center -78px;
-  background-color: @white;
-  color: @header-bg;
-  background-size: 100%;
 
-  @media (min-width: 660px) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    .bg-img("bg-back-tablet@1x.jpg");
-    background-position: center -2px;
-    background-color: @white;
-  }
-
-  @media (min-width: 1200px) {
-    .bg-img("bg-back-desktop@1x.jpg");
-    background-position: center -119px;
-    background-color: @white;
-    margin-top: -729px;
-  }
-}
-
-.page-main__attachment {
-  min-height: 395px;
-  padding-top: 18px;
+.page-header__attachment {
+  // position: relative;
   background-image: url("../img/iphone-hand-mobile.png");
   background-repeat: no-repeat;
-  background-position-y: 109px;
-  background-position-x: center;
+  background-position-y: 132px;
+  background-position-x: 7px;
+  min-height: 395px;
+  padding-top: 18px;
+  background-size: 75%;
 
-  @media (min-width: 660px) {
+  @media (min-width: @tablet-width) {
     background-image: url("../img/iphone-hand-tablet@1x.png");
     background-repeat: no-repeat;
     background-size: 545px;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: @desktop-width) {
     background-image: url("../img/iphone-hand-desktop@1x.png");
     background-repeat: no-repeat;
     background-position-y: 0;
@@ -61,13 +39,25 @@
   }
 }
 
-.page-main__title {
+// .attachment__img {
+//   position: absolute;
+//   top: 130px;
+//   left: -2px;
+//   width: 261px;
+//   height: 314px;
+// }
+
+.page-header__title {
   margin: 0;
-  padding: 64px 50px;
+  padding: 0 20px;
   text-align: center;
   font-size: 24px;
   font-weight: 300;
   color: @white;
+
+  @media (min-width: @tablet-width) {
+    font-size: 40px;
+  }
 
   @media (min-width: @desktop-width) {
     padding: 30px 0;
@@ -87,8 +77,8 @@
 }
 
 .page-inner__attachment {
-  padding-top: 25px;
-  margin-bottom: 29px;
+  padding-top: 32px;
+  padding-bottom: 78px;
 }
 
 .page-catalog__blockquote {
