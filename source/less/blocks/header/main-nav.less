@@ -1,11 +1,18 @@
 .main-nav__wrapper {
   background-color: @header-bg;
 
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 660px;
+    margin: 0 auto;
+  }
+
   @media (min-width: @desktop-width) {
     width: 940px;
     display: flex;
     justify-content: space-between;
-    background-color: @transparent;
   }
 }
 
