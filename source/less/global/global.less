@@ -46,6 +46,7 @@ input[type="radio"].visually-hidden {
 }
 
 .list {
+  display: block;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -61,18 +62,18 @@ input[type="radio"].visually-hidden {
 }
 
 .container {
-  min-width: 320px;
-  margin: 0;
+  max-width: 320px;
+  margin: 0 auto;
   text-align: center;
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    min-width: 660px;
-    margin: 0;
+    max-width: 660px;
+    margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {
-    min-width: 940px;
+    max-width: 940px;
     margin: 0 auto;
   }
 }
