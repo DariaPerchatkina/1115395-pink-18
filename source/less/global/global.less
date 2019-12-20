@@ -21,11 +21,13 @@ body {
 }
 
 img {
+  display: block;
   max-width: 100%;
   height: auto;
 }
 
 .link {
+  display: block;
   color: inherit;
   text-decoration: none;
 }
@@ -62,18 +64,16 @@ input[type="radio"].visually-hidden {
 }
 
 .container {
-  max-width: 320px;
+  max-width: @width-mobile;
   margin: 0 auto;
   text-align: center;
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    max-width: 660px;
-    margin: 0 auto;
+    max-width: @tablet-width;
   }
 
   @media (min-width: @desktop-width) {
-    max-width: 940px;
-    margin: 0 auto;
+    max-width: @desktop-width;
   }
 }
