@@ -57,6 +57,10 @@
     display: flex;
     flex-direction: column;
   }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+  }
 }
 
 .advantages__item {
@@ -134,7 +138,7 @@
       display: none;
 
       @media (min-width: @desktop-width) {
-      display: none;
+      display: block;
       width: 236px;
       height: 293px;
       background-image: url("../img/iphone-screen-3-desktop@1x.png");
