@@ -1,5 +1,5 @@
 .advantages {
-  min-height: 1002px;
+  min-height: 850px;
   // background-image: url("../img/iphone-screen-mobile@1x.png");
   // background-repeat: no-repeat;
   // background-position: center bottom -40px;
@@ -36,15 +36,18 @@
 
 .advantages__wrapper {
   padding-top: 40px;
-  min-height: 376px;
+  min-height: 800px;
+  align-items: center;
   width: 100%;
   background-color: @advantages-bg;
 
   @media (min-width: @tablet-width) {
-    min-height: 430px;
+    min-height: 509px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 0;
+    padding-left: 300px;
 
   @media (min-width: @desktop-width) {
     width: auto;
@@ -56,6 +59,7 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
+    width: 360px;
   }
 
   @media (min-width: @desktop-width) {
@@ -64,9 +68,10 @@
 }
 
 .advantages__item {
-  padding: 0 30px;
+  position: relative;
+  padding: 5px 5px;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   min-height: 100px;
 
   @media (min-width: @tablet-width) {
@@ -78,6 +83,8 @@
   font-size: 18px;
   font-weight: 700;
   color: @black;
+  margin: 5px;
+  margin-left: 0;
 }
 
 .advantages__item span {
@@ -119,17 +126,23 @@
 
     &--friends::after {
       content: "";
-      display: none;
+      display: block;
+      position: absolute;
       width: 236px;
       height: 293px;
       background-image: url("../img/iphone-screen-mobile@1x.png");
       background-repeat: no-repeat;
-      background-position-x: center;
-      background-position-y: 10px;
+      background-position-x: right;
+      background-position-y: center -10px;
+      background-size: 70%;
       margin-top: 35px;
 
+      @media (min-width: @tablet-width) {
+        display: none;
+      }
+
       @media (min-width: @desktop-width) {
-      display: none;
+        display: none;
       }
     }
     
@@ -137,7 +150,19 @@
       content: "";
       display: none;
 
+      @media (min-width: @tablet-width) {
+        display: block;
+        position: absolute;
+        bottom: -130px;
+        left: -280px;
+        width: 268px;
+        height: 547px;
+        background-image: url("../img/iphone-screen-3-tablet@1x.png");
+        background-repeat: no-repeat;
+      }
+
       @media (min-width: @desktop-width) {
+     
       display: block;
       width: 236px;
       height: 293px;
