@@ -3,6 +3,13 @@
   height: 300px;
   text-align: center;
   color: @header-bg;
+
+  @media (min-width: @tablet-width) {
+    position: static;
+    display: flex;
+    justify-content: center;
+    background-color: @white-gray;
+  }
 }
 
 .rate__cell::before {
@@ -22,7 +29,18 @@
 .rate__table {
   position: absolute;
   width: max-content;
-  transform: translateX(-265px);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: translateX(-255px);
+  border: 2px solid @white-gray;
+  border-collapse: collapse;
+
+  @media (min-width: @tablet-width) {
+    transform: translateX(-7px);
+    width: 677px;
+  }
 }
 
 .rate__item {
@@ -31,15 +49,38 @@
   line-height: 2.14;
   text-transform: uppercase;
   display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    border: 1px solid @gray-br;
+    border-collapse: collapse;
+    font-size: 14px;
+    line-height: 2.14;
+    font-weight: 400;
+    text-transform: none;
+    padding: 5px 0;
+  }
 }
 
 .rate__cell {
   width: 276px;
+  border: 1px solid @gray-br;
+  border-collapse: collapse;
+
+  @media (min-width: @tablet-width) {
+    width: 152px;
+  }
 }
 
 .rate__transparent {
   background-color: @transparent;
   display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    width: 153px;
+    background-color: @white-gray;
+  }
 }
 
 .rate__title {
@@ -74,4 +115,19 @@
 
 .rate__header {
   color: @white;
+  border: 2px solid @gray-br;
+
+  @media (min-width: @tablet-width) {
+    height: 75px;
+    font-size: 16px;
+    line-height: 1.88;
+  }
+}
+
+.rate__span {
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 1.67;
+    font-weight: 300;
+  }
 }
