@@ -28,18 +28,23 @@
 
 .rate__table {
   position: absolute;
-  width: max-content;
+  // width: max-content;
+  width: auto;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  transform: translateX(-255px);
+  transform: translateX(-10.5%);
   border: 2px solid @white-gray;
   border-collapse: collapse;
 
   @media (min-width: @tablet-width) {
     transform: translateX(-7px);
     width: 677px;
+  }
+
+  @media (min-width: @desktop-width) {
+    transform: translateX(39%);
   }
 }
 

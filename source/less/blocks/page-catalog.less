@@ -15,7 +15,7 @@
   background-image: url("../img/panorama-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: auto;
-  min-height: 174px;
+  min-height: 137px;
   background-position-x: center;
 
   @media (min-width: @tablet-width) {
@@ -32,16 +32,22 @@
 }
 
 .page-catalog__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   @media (min-width: @tablet-width) {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: end;
+    padding: 0;
+    margin: 0;
   }
 }
 
 .page-catalog__item {
   width: 300px;
+  margin: 0 20px;
 
   @media (min-width: @tablet-width) {
     margin-left: 20px;
@@ -152,10 +158,30 @@
   line-height: 2.14;
   text-align: center;
 
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
+
   @media (min-width: @desktop-width) {
     font-size: 18px;
     line-height: 1.67;
     max-width: 568px;
+  }
+}
+
+.page-catalog__title--inner {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 0;
+  margin-bottom: 39px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 75px;
+    padding-left: 86px;
+    padding-right: 86px;
+    padding-bottom: 0;
+    margin-bottom: 76px;
   }
 }
 
@@ -171,11 +197,12 @@
   background-color: @advantages-bg;
   padding-top: 25px;
   padding-bottom: 28px;
-  margin-left: 20px;
+  padding-left: 17px;
+  padding-right: 20px;
+  margin-left: 0;
   margin-right: 20px;
   margin-top: 0;
   margin-bottom: 20px;
-  align-items: сenter;
 
   @media (min-width: @tablet-width) {
     height: 155px;
@@ -184,12 +211,22 @@
     margin-left: 0;
     margin-right: 0;
     padding: 0;
-    // padding: 27px;
   }
+}
 
-  // @media (min-width: @desktop-width) {
-  //   //
-  // }
+.page-catalog__blockquote--main {
+  background-color: @advantages-bg;
+  padding-top: 25px;
+  padding-bottom: 28px;
+  padding-left: 17px;
+  padding-right: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+  }
 }
 
 .page-catalog__cite {
@@ -213,19 +250,10 @@
   color: @header-bg;
   font-weight: 400;
   text-align: left;
-  padding-left: 20px;
+  line-height: 2.14;
 }
 
 
 .page-catalog__img--panorama {
   margin: 0;
-}
-
-// .page-catalog__link {
-//   margin: 0;
-// }
-
-.page-catalog p {
-  font-size: 14px;
-  line-height: 2.14;
 }
