@@ -128,7 +128,6 @@
   width: 35px;
   height: 35px;
   background-color: @white;
-  background-image: url("../img/icon-yes.svg");
   border: solid 2px @header-bg;
   background-repeat: no-repeat;
   background-position-x: center;
@@ -189,12 +188,17 @@
 .contest-form__input--radio:checked + .contest-form__label::before {
   content: "";
   position: absolute;
-  top: 7px;
-  left: -41px;
-  width: 15px;
-  height: 15px;
+  top: -3px;
+  left: -52px;
+  width: 35px;
+  height: 36px;
   border-radius: 50%;
-  background-color: @pink;
+  background-color: @white;
+  border: @form-border;
+  background-repeat: no-repeat;
+  background-image: url("../img/icon-map-marker.svg");
+  background-position-x: center;
+  background-position-y: center;
 }
 
 .contest-form__label--main {
