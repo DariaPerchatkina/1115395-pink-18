@@ -42,7 +42,6 @@
 
   <main class="page-inner">
     <section class="page-inner__block">
-    <div class="container">
     <h1 class="visually-hidden">Фотографии в приложении Pink</h1>
       <header class="page-inner__header">
         <h2 class="page-inner__title">Фотографии пользователей</h2>
@@ -50,20 +49,20 @@
     </section>
     <section class="page-catalog">
       <h3 class="page-catalog__title page-catalog__title--inner">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h3>
-      <div class="page-catalog__wrapper">
         <a class="page-catalog__link page-catalog__main link" href="#">
           <!-- <img class="page-catalog__img page-catalog__img--panorama" src="img/panorama-mobile@1x.jpg"
             width="320" height="73" alt="панорама с моста в Скай-парк"> -->
         </a>
-        <blockquote class="page-catalog__blockquote page-catalog__blockquote--main">
+        <blockquote class="page-catalog__blockquote page-catalog__blockquote--main ">
           <cite class="page-catalog__cite">Анна</cite>
           <span>(5 минут назад)</span>
-          <p class="page-catalog__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую
+          <p class="page-catalog__text">
+            Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую
             трансляцию в перископе, задавайте свои вопросы!</p>
             <button>&#9825; Нравится:215</button>
         </blockquote>
-      </div>
-      <ul class="page-catalog__list container list">
+      <div class="page-catalog__wrapper">
+      <ul class="page-catalog__list list">
         <li class="page-catalog__item">
           <a  class="page-catalog__link page-catalog__link--auto link"  href="#"></a>
           <blockquote class="page-catalog__blockquote">
@@ -119,11 +118,12 @@
           </blockquote>
         </li>
       </ul>
+    </div>
     </section>
-
-    <div class="page-main__filter filter">
+    <div class="page-main__filter page-filter">
       <h2 class="visually-hidden">Фильтр для обработки фотографий</h2>
-      <p>Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+      <p class="page-filter__text">Затмите их всех!</p>
+      <p class="page-filter__text">Выкладывайте все, что накопилось в телефоне!</p>
     </div>
       <section class="filter filter__post tab">
         <h3 class="visually-hidden">Обработка фотографии</h3>
