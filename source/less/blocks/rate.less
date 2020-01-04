@@ -1,6 +1,51 @@
 .rate {
+  position: relative;
+  height: 300px;
   text-align: center;
   color: @header-bg;
+
+  @media (min-width: @tablet-width) {
+    position: static;
+    display: flex;
+    justify-content: center;
+    background-color: @white-gray;
+  }
+}
+
+.rate__cell::before {
+  content: attr(data-text);
+  margin-right: 15px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 2.14;
+  text-align: left;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    content: "";
+  }
+}
+
+.rate__table {
+  position: absolute;
+  // width: max-content;
+  width: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: translateX(-10.5%);
+  border: 2px solid @white-gray;
+  border-collapse: collapse;
+
+  @media (min-width: @tablet-width) {
+    transform: translateX(-2.4%);
+    width: 677px;
+  }
+
+  @media (min-width: @desktop-width) {
+    transform: translateX(39%);
+  }
 }
 
 .rate__item {
@@ -8,10 +53,39 @@
   font-weight: 400;
   line-height: 2.14;
   text-transform: uppercase;
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    border: 1px solid @gray-br;
+    border-collapse: collapse;
+    font-size: 14px;
+    line-height: 2.14;
+    font-weight: 400;
+    text-transform: none;
+    padding: 5px 0;
+  }
+}
+
+.rate__cell {
+  width: 276px;
+  border: 1px solid @gray-br;
+  border-collapse: collapse;
+
+  @media (min-width: @tablet-width) {
+    width: 152px;
+  }
 }
 
 .rate__transparent {
   background-color: @transparent;
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    width: 153px;
+    background-color: @white-gray;
+  }
 }
 
 .rate__title {
@@ -22,6 +96,7 @@
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+  word-break: break-all;
 }
 
 .rate__title span {
@@ -45,4 +120,19 @@
 
 .rate__header {
   color: @white;
+  border: 2px solid @gray-br;
+
+  @media (min-width: @tablet-width) {
+    height: 75px;
+    font-size: 16px;
+    line-height: 1.88;
+  }
+}
+
+.rate__span {
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 1.67;
+    font-weight: 300;
+  }
 }

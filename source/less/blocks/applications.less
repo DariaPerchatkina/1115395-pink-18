@@ -1,22 +1,52 @@
 .applications {
+  width: 100%;
+  height: 271px;
+  color: @white;
   background-color: @main-bg;
-  padding-top: 48px;
-  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    width: 300px;
+    background-color: @transparent;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 90px;
+  }
 }
 
 .applications__link {
   font-size: 18px;
   font-weight: 700;
-  padding-top: 12px;
-  padding-bottom: 14px;
-  padding-left: 35px;
-  padding-right: 36px;
-  margin-top: 28px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-left: 17px;
+  padding-right: 18px;
+
+  @media (min-width: @desktop-width) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 29px;
+    padding-right: 30px;
+    font-size: 21px;
+    line-height: 0.86;
+    margin-bottom: 41px;
+  }
 }
 
 .applications__btn {
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 11px;
+  padding-bottom: 10px;
+
+  @media (min-width: @desktop-width) {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 14px;
+    padding-bottom: 10px;
+  }
 }
 
 .applications__store {
@@ -25,8 +55,8 @@
 
 .applications__list {
   display: flex;
-  justify-content: space-between;
-  margin-top: 49px;
+  justify-content: space-around;
+  align-items: baseline;
 }
 
 .applications__link span {
@@ -65,4 +95,15 @@
   text-align: center;
   padding-left: 40px;
   padding-right: 40px;
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+    font-size: 18px;
+    line-height: 1.33;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 0;
+  }
 }

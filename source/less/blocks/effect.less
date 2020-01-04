@@ -1,0 +1,85 @@
+.effect {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    // width: 238px;
+    // height: 276px;
+    background-image: url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-size: 35%;
+    background-position: bottom 3px left 24px;
+    fill: #dedede;
+    padding-left: 280px;
+    padding-bottom: 20px;
+    padding-top: 70px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-size: 19%;
+    background-color: @advantages-bg;
+    background-position: bottom 42px left 197px;
+    padding-bottom: 50px;
+    padding-left: 496px;
+  }
+}
+
+.effect::before {
+  @media (min-width: @tablet-width) {
+    width: 202px;
+    height: 202px;
+    border-radius: 50%;
+    border: 5px solid @pink;
+  }
+}
+
+.effect__header {
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    color: @black;
+    line-height: 1.2;
+    font-weight: 700;
+    max-width: 170px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 30px;
+    max-width: 525px;
+  }
+}
+
+.effect__wrapper {
+  @media (min-width: @tablet-width) {
+    min-width: 295px;
+    text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 525px;
+  }
+}
+
+.effect__text {
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+    color: @header-bg;
+    line-height: 1.71;
+    font-weight: 300;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    line-height: 1.67;
+  }
+}
+
+.effect__link {
+  @media (min-width: @tablet-width) {
+    color: @pink;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+    text-decoration: underline;
+  }
+}

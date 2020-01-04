@@ -7,68 +7,64 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Пинк-фотографии</title>
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
 </head>
 
 <body>
-  <header class="main-header">
-    <div class="container">
-    <a class="main-header__logo link" href="index.html" aria-label="Переход на главную страницу">
-      <img  src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="логотип приложения Pink">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle btn" type="button" disabled>
-        <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
-          <path fill="#FFFFFF" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
-        </svg>
-      </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list  list">
-          <li class="site-list__item">
-            <a class ="site-list__link link" href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a class ="site-list__link link">Фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a class ="site-list__link link" href="form.html">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a class ="site-list__link link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </li>
-        </ul>
-      </div>
+<header class="main-header">
+  <a class="main-header__logo link" href="index.html" aria-label="Переход на главную страницу">
+    <img class="visually-hidden" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="логотип приложения Pink">
+  </a>
+  <nav class="main-nav">
+    <button class="main-nav__trigger" type="button" disabled>
+      <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
+        <path fill="#FFFFFF" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
+      </svg>
+    </button>
+    <div class="main-nav__wrapper">
+      <ul class="main-nav__list site-list  list">
+        <li class="site-list__item">
+          <a class ="site-list__link link" href="index.html">Главная</a>
+        </li>
+        <li class="site-list__item">
+          <a class ="site-list__link link">Фотографии</a>
+        </li>
+        <li class="site-list__item">
+          <a class ="site-list__link link" href="form.html">Конкурс</a>
+        </li>
+        <li class="site-list__item">
+          <a class ="site-list__link link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </li>
+      </ul>
+    </div>
     </nav>
-  </div>
-  </header>
+</header>
 
-  <main class="page-main page-inner">
-    <div class="container">
+  <main class="page-inner">
+    <section class="page-inner__block">
     <h1 class="visually-hidden">Фотографии в приложении Pink</h1>
-    <section class="page-main__block">
-      <div class="page-inner__attachment">
-        <h2 class="page-main__title">Фотографии пользователей</h2>
-      </div>
-        <p class="page-catalog">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+      <header class="page-inner__header">
+        <h2 class="page-inner__title">Фотографии пользователей</h2>
+      </header>
+    </section>
     <section class="page-catalog">
+      <h3 class="page-catalog__title page-catalog__title--inner">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h3>
+        <a class="page-catalog__link page-catalog__main link" href="#">
+          <!-- <img class="page-catalog__img page-catalog__img--panorama" src="img/panorama-mobile@1x.jpg"
+            width="320" height="73" alt="панорама с моста в Скай-парк"> -->
+        </a>
+        <blockquote class="page-catalog__blockquote page-catalog__blockquote--main ">
+          <cite class="page-catalog__cite">Анна</cite>
+          <span>(5 минут назад)</span>
+          <p class="page-catalog__text">
+            Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую
+            трансляцию в перископе, задавайте свои вопросы!</p>
+            <button>&#9825; Нравится:215</button>
+        </blockquote>
+      <div class="page-catalog__wrapper">
       <ul class="page-catalog__list list">
         <li class="page-catalog__item">
-          <a class="page-catalog__link link" href="#">
-            <img class="page-catalog__img page-catalog__img--panorama" src="img/panorama-mobile@1x.jpg"
-              width="320" height="73" alt="панорама с моста в Скай-парк">
-          </a>
-          <blockquote class="page-catalog__blockquote">
-            <cite class="page-catalog__cite">Анна</cite>
-            <span>(5 минут назад)</span>
-            <p class="page-catalog__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую
-              трансляцию в перископе, задавайте свои вопросы!</p>
-              <button>&#9825; Нравится:215</button>
-          </blockquote>
-        </li>
-        <li class="page-catalog__item">
-          <a  class="page-catalog__link link"  href="#">
-            <img class="page-catalog__img" src="img/photo-car-mobile@1x.jpg"
-              width="280" height="180" alt="Фото автомобиля">
-          </a>
+          <a  class="page-catalog__link page-catalog__link--auto link"  href="#"></a>
           <blockquote class="page-catalog__blockquote">
             <cite class="page-catalog__cite">Левон</cite>
             <span>(5 часов назад)</span>
@@ -77,10 +73,7 @@
           </blockquote>
         </li>
         <li class="page-catalog__item">
-          <a  class="page-catalog__link link" href="#">
-            <img class="page-catalog__img" src="img/photo-drumset-mobile@1x.jpg"
-            width="280" height="180" alt="Фото барабанной установки">
-          </a>
+          <a  class="page-catalog__link page-catalog__link--drum link" href="#"></a>
           <blockquote class="page-catalog__blockquote">
             <cite class="page-catalog__cite">Антон</cite>
             <span>(12 часов назад)</span>
@@ -89,10 +82,7 @@
           </blockquote>
         </li>
         <li class="page-catalog__item">
-          <a  class="page-catalog__link link" href="#">
-            <img class="page-catalog__img" src="img/photo-window-mobile@1x.jpg"
-              width="280" height="180" alt="Вид на небо из панорамной крыши">
-          </a>
+          <a  class="page-catalog__link page-catalog__link--sky link" href="#"></a>
           <blockquote class="page-catalog__blockquote">
             <cite class="page-catalog__cite">Борис</cite>
             <span>(20 часов назад)</span>
@@ -101,10 +91,7 @@
           </blockquote>
         </li>
         <li class="page-catalog__item">
-          <a  class="page-catalog__link link" href="#">
-            <img class="page-catalog__img" src="img/photo-fair-mobile@1x.jpg"
-              width="280" height="180" alt="Фото с бахчевого рынка">
-          </a>
+          <a  class="page-catalog__link page-catalog__link--market link" href="#"></a>
           <blockquote class="page-catalog__blockquote">
             <cite class="page-catalog__cite">Сергей</cite>
             <span>(25 часов назад)</span>
@@ -113,10 +100,7 @@
           </blockquote>
           </li>
         <li class="page-catalog__item">
-          <a  class="page-catalog__link link" href="#">
-            <img class="page-catalog__img" src="img/photo-pov-mobile@1x.jpg"
-              width="280" height="180" alt="Фото гористой местности">
-          </a>
+          <a  class="page-catalog__link page-catalog__link--mountains link" href="#"></a>
           <blockquote class="page-catalog__blockquote">
             <cite class="page-catalog__cite">Максим</cite>
             <span>(40 часов назад)</span>
@@ -125,10 +109,7 @@
           </blockquote>
         </li>
         <li class="page-catalog__item">
-          <a  class="page-catalog__link link" href="#">
-            <img class="page-catalog__img" src="img/photo-wing-mobile@1x.jpg"
-              width="280" height="180" alt="Вид из иллюминатора самолета">
-          </a>
+          <a  class="page-catalog__link page-catalog__link--flight link" href="#"></a>
           <blockquote class="page-catalog__blockquote">
             <cite class="page-catalog__cite">Надежда</cite>
             <span>(45 часов назад)</span>
@@ -137,11 +118,12 @@
           </blockquote>
         </li>
       </ul>
+    </div>
     </section>
-    </section>
-    <div class="page-main__filter filter">
+    <div class="page-inner__filter page-filter">
       <h2 class="visually-hidden">Фильтр для обработки фотографий</h2>
-      <p>Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+      <p class="page-filter__text">Затмите их всех!</p>
+      <p class="page-filter__text">Выкладывайте все, что накопилось в телефоне!</p>
     </div>
       <section class="filter filter__post tab">
         <h3 class="visually-hidden">Обработка фотографии</h3>
@@ -175,7 +157,7 @@
               <li class="tab__item">
                 <label class="tab__label" for="filter__contrast" tabindex="0">
                   <svg class="tab__svg" id="contrast__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
-                    <path fill="#231F20" d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
+                    <path  d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
                     <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
                   </svg>
                 </label>
@@ -188,12 +170,11 @@
       </form>
       </div>
     </section>
-    </div>
   </main>
 
   <footer class="page-footer">
-    <div class="container">
-    <a class="page-footer__logo" href="index.html">
+    <div class="page-footer__wrapper container">
+    <a class="page-footer__logo link" href="index.html">
       <svg id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
         <g>
           <path fill="#283645" d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.063 c0,4.86-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.287-1.289,1.287c-0.676,0-1.256-0.58-1.256-1.287L71.874,18.661 L71.874,18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57V29.641 z"/>
@@ -231,8 +212,8 @@
       </div>
     <div class="footer-sentence">
       <a class="footer-sentence footer-sentence__link link" href="https://htmlacademy.ru/intensive/adaptive">
-        <p>Разработано</p>
-        <img src="./img/logo-htmlacademy.svg" width="27" height="34" alt="htmlacademy">
+        <p class="footer-sentence__text">Разработано</p>
+        <img class="footer-sentence__img" src="./img/logo-htmlacademy.svg" width="27" height="34" alt="htmlacademy">
       </a>
     </div>
   </div>
