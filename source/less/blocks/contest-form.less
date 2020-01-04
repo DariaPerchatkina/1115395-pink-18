@@ -43,7 +43,6 @@
   border: solid 2px @pink;
 }
 
-
 .form-block {
   background-color: @advantages-bg;
   text-align: center;
@@ -88,7 +87,7 @@
 
 .contest-form__label::before {
   position: absolute;
-  left: -48px;
+  left: -61px;
   width: 35px;
   height: 35px;
   background-color: @white;
@@ -97,7 +96,7 @@
 .contest-form__input--checkbox + .contest-form__label::before {
   content: "";
   position: absolute;
-  left: -48px;
+  left: -61px;
   width: 35px;
   height: 35px;
   background-color: @white;
@@ -108,7 +107,7 @@
 .contest-form__input--checkbox:checked + .contest-form__label::before {
   content: "";
   position: absolute;
-  left: -48px;
+  left: -61px;
   width: 35px;
   height: 35px;
   background-color: @white;
@@ -124,7 +123,7 @@
 .contest-form__input--checkbox:active + .contest-form__label::before {
   content: "";
   position: absolute;
-  left: -48px;
+  left: -61px;
   width: 35px;
   height: 35px;
   background-color: @white;
@@ -138,7 +137,7 @@
 .contest-form__input--checkbox:focus + .contest-form__label::before {
   content: "";
   position: absolute;
-  left: -48px;
+  left: -61px;
   width: 35px;
   height: 35px;
   background-color: @white;
@@ -151,7 +150,7 @@
 
 .contest-form__input--radio {
   position: absolute;
-  left: -48px;
+  left: -61px;
   width: 35px;
   height: 35px;
   border-radius: 50%;
@@ -162,7 +161,7 @@
   content: "";
   position: absolute;
   top: -3px;
-  left: -52px;
+  left: -61px;
   width: 37px;
   height: 36px;
   border-radius: 50%;
@@ -176,7 +175,7 @@
   content: "";
   position: absolute;
   top: -3px;
-  left: -52px;
+  left: -61px;
   width: 35px;
   height: 36px;
   border-radius: 50%;
@@ -189,7 +188,7 @@
   content: "";
   position: absolute;
   top: -3px;
-  left: -52px;
+  left: -61px;
   width: 35px;
   height: 36px;
   border-radius: 50%;
@@ -203,7 +202,7 @@
 
 .contest-form__label--main {
   padding-left: 0;
-  margin-left: 21px;
+  margin-left: -43px;
   padding-top: 8px;
   padding-bottom: 6px;
   font-size: 14px;
@@ -214,6 +213,9 @@
 }
 
 .contest-form__button {
+  display: block;
+  padding: 0;
+  margin: 0 auto;
   width: 276px;
   height: 59px;
   font-size: 18px;
@@ -241,4 +243,22 @@
 
 .label-textarea {
   padding-top: 17px;
+}
+
+.contest-form__text {
+  padding: 0 20px;
+}
+
+.contest-form__span {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 2.14;
+  text-transform: uppercase;
+  color: @header-bg;
+  text-align: center;
+}
+
+.contest-form__star {
+  color: @pink;
 }

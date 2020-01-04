@@ -16,6 +16,11 @@
 
 .filter__post {
   background-color: @advantages-bg;
+
+  @media (min-width: @desktop-width) {
+    max-width: 940px;
+    margin: 0 auto;
+  }
 }
 
 .page-filter__text {
@@ -46,6 +51,11 @@
   background-color: @advantages-bg;
   line-height: 1;
   align-items: center;
+}
+
+.filter__btn--cancel {
+  border: solid 3px @btn-cancel;
+  color: @btn-cancel;
 }
 
 .footer__link {
