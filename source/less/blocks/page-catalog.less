@@ -1,8 +1,8 @@
 .page-catalog {
-  min-height: 165px;
-  padding-top: 25px;
+  padding-top: 15px;
   padding-bottom: 5px;
   margin: 0;
+  margin-bottom: 14px;
   background-color: @white;
   color: @header-bg;
   font-size: 14px;
@@ -190,10 +190,11 @@
 }
 
 .page-catalog__title--inner {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 35px;
+  padding-right: 35px;
   padding-bottom: 0;
-  margin-bottom: 39px;
+  margin-bottom: 50px;
+  line-height: 2.2;
 
   @media (min-width: @tablet-width) {
     padding-top: 75px;
@@ -221,16 +222,17 @@
 }
 
 .page-catalog__blockquote {
-  position: relative;
+  display: flex;
+  flex-direction: column;
   background-color: @advantages-bg;
-  padding-top: 15px;
-  padding-bottom: 28px;
+  padding-top: 13px;
+  padding-bottom: 19px;
   padding-left: 17px;
   padding-right: 20px;
   margin-left: 0;
   margin-right: 20px;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 
   @media (min-width: @tablet-width) {
     height: 155px;
@@ -245,9 +247,9 @@
 .page-catalog__blockquote--main {
   background-color: @advantages-bg;
   padding-top: 15px;
-  padding-bottom: 28px;
+  padding-bottom: 21px;
   padding-left: 17px;
-  padding-right: 20px;
+  padding-right: 14px;
   margin-left: 20px;
   margin-right: 20px;
   margin-top: 0;
@@ -255,19 +257,30 @@
 }
 
 .page-catalog__cite {
-  position: absolute;
-  left: 18px;
   font-size: 14px;
   font-style: normal;
-  font-weight: 700;
   color: @header-bg;
   text-align: left;
 }
 
+.page-catalog__autor {
+  padding-right: 2px;
+}
+
+.page-catalog__like {
+  width: 10px;
+  border: none;
+  background-color: @transparent;
+}
+
+.page-catalog__number {
+  margin: 0 34px;
+  font-size: 10px;
+  line-height: 2;
+  text-transform: uppercase;
+}
+
 .page-catalog__blockquote span {
-  position: absolute;
-  left: 61px;
-  top: 18px;
   font-size: 12px;
   font-style: normal;
   font-weight: 300;
@@ -276,12 +289,13 @@
 }
 
 .page-catalog__text {
-  padding-top: 12px;
+  margin: 0;
+  margin-bottom: 10px;
   font-size: 14px;
   color: @header-bg;
   font-weight: 400;
   text-align: left;
-  line-height: 2.14;
+  line-height: 1.71;
 }
 
 

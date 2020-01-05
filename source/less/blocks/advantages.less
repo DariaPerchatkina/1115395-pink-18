@@ -9,10 +9,10 @@
 .advantages__attachment {
   background-color: @white;
   min-height: 139px;
-  padding-top: 46px;
+  padding-top: 42px;
   padding-left: 50px;
   padding-right: 50px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 
   @media (min-width: @tablet-width) {
     min-width: 100%;
@@ -23,11 +23,13 @@
 }
 
 .advantages__intro {
+  margin: 0;
+  margin-bottom: 32px;
   font-size: 24px;
   font-weight: 300;
+  line-height: 1.2;
   text-align: center;
   color: @header-bg;
-  margin: 0;
 
   @media (min-width: @tablet-width) {
     font-size: 40px;
@@ -51,8 +53,8 @@
 }
 
 .advantages__wrapper {
-  padding-top: 40px;
-  min-height: 720px;
+  padding-top: 39px;
+  min-height: 756px;
   align-items: center;
   width: 100%;
   background-color: @advantages-bg;
@@ -92,10 +94,11 @@
 
 .advantages__item {
   position: relative;
-  padding: 5px 5px;
-  text-align: center;
-  margin-bottom: 10px;
   min-height: 100px;
+  margin-bottom: 10px;
+  padding: 5px 20px;
+  padding-bottom: 12px;
+  text-align: center;
 
   @media (min-width: @tablet-width) {
     text-align: left;
@@ -114,11 +117,14 @@
 }
 
 .advantages__item h3 {
+  margin-right: 5px;
+  margin-top: 3px;
+  margin-bottom: 8px;
+  margin-left: 7px;
   font-size: 18px;
   font-weight: 700;
+  line-height: 1.71;
   color: @black;
-  margin: 5px;
-  margin-left: 0;
 
   @media (min-width: @desktop-width) {
     font-size: 30px;
@@ -177,14 +183,16 @@
   content: "";
   display: block;
   position: absolute;
+  top: 124px;
+  right: 80px;
   width: 266px;
-  height: 293px;
-  background-image: url("../img/iphone-screen-mobile@1x.png");
+  height: 277px;
+  margin-top: 35px;
+  background-image: url(../img/iphone-screen-mobile@1x.png);
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: center -10px;
-  background-size: 70%;
-  margin-top: 35px;
+  background-size: 59%;
 
   @media (min-width: @tablet-width) {
     display: none;

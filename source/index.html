@@ -15,7 +15,7 @@
         <img class="visually-hidden" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="логотип приложения Pink">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__trigger" type="button" disabled>
+        <button class="main-nav__trigger main-nav__trigger--hidden" type="button">
           <svg class="main-nav__svg" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
             <path fill="#FFFFFF" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
           </svg>
@@ -112,7 +112,7 @@
       </div>
     </section>
     <section class="review">
-      <h2 class="visually-hidden">Отзывы полльзователей</h2>
+      <h2 class="visually-hidden">Отзывы пользователей</h2>
       <div class="review__wrapper">
       <blockquote class="review__description">
         <cite class ="review__cite">Николай Петров<span class="review__span">25 лет, водитель трамвая</span></cite>
@@ -129,14 +129,16 @@
     <section class="rate">
       <h2 class="visually-hidden">Тарифы</h2>
         <div class="container">
-        <table class="rate__table">
+          <table class="rate__table">
+          <tbody class="rate__body">
             <tr class="rate__header">
-              <td class="rate__transparent">&nbsp;</td>
-              <td class="rate__title">База<br><span class="rate__span">1,99 USD</span></td>
-              <td class="rate__title">Стандарт<br><span class="rate__span">3,99 USD</span></td>
-              <td class="rate__title">Анлим<br><span class="rate__span">9,99 USD</span></td>
+              <th class="rate__transparent">&nbsp;</th>
+              <th class="rate__title">База<br><span class="rate__span">1,99 USD</span></th>
+              <th class="rate__title">Стандарт<br><span class="rate__span">3,99 USD</span></th>
+              <th class="rate__title">Анлим<br><span class="rate__span">9,99 USD</span></th>
             </tr>
-            <tr >
+            <tr>
+            <tr>
               <td class="rate__item">Розовый фильтр</td>
               <td class="rate__cell" data-text="Розовый фильтр">
                   <svg  class="rate__svg rate__svg--yes" id="svg-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
@@ -190,7 +192,10 @@
                 </svg>
               </td>
             </tr>
+          </tbody>
           </table>
+
+
       <p class="rate__toggles slider-toggles">
         <button class="rate__toggle btn" type="button">1</button>
         <button class="rate__toggle btn" type="button">2</button>
