@@ -119,12 +119,16 @@
         <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
         привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
       </blockquote>
-      <p class="review__toggles slider-toggles">
-        <button class="review__toggle btn" type="button">1</button>
-        <button class="review__toggle btn" type="button">2</button>
-        <button class="review__toggle btn" type="button">3</button>
-      </p>
-      </div>
+    </div>
+        <div class="slider-toggles container">
+          <input class="visually-hidden button-1" type="radio" id="button-1" name="toggle">
+          <input class="visually-hidden button-2" type="radio" id="button-2" name="toggle" checked="">
+          <input class="visually-hidden button-3" type="radio" id="button-3" name="toggle">
+          <div class="slider-toggles__controls slider-toggles__controls--review">
+            <label class="slider-toggles__controls-item slider-toggles__controls-item--1" for="button-1" tabindex="0">Первый</label>
+            <label class="slider-toggles__controls-item slider-toggles__controls-item--2" for="button-2" tabindex="0">Второй</label>
+            <label class="slider-toggles__controls-item slider-toggles__controls-item--3" for="button-3" tabindex="0">Третий</label>
+          </div>
     </section>
     <section class="rate">
       <h2 class="visually-hidden">Тарифы</h2>
@@ -134,74 +138,71 @@
             <tr class="rate__header">
               <th class="rate__transparent">&nbsp;</th>
               <th class="rate__title">База<br><span class="rate__span">1,99 USD</span></th>
-              <th class="rate__title">Стандарт<br><span class="rate__span">3,99 USD</span></th>
+              <th class="rate__title">
+                <div class="rate__hit" data-text="ХИТ">
+                  <p class="rate__text">Хит</p>
+                </div>
+                Стандарт<br><span class="rate__span">3,99 USD</span></th>
               <th class="rate__title">Анлим<br><span class="rate__span">9,99 USD</span></th>
             </tr>
             <tr>
             <tr>
               <td class="rate__item">Розовый фильтр</td>
-              <td class="rate__cell" data-text="Розовый фильтр">
-                  <svg  class="rate__svg rate__svg--yes" id="svg-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-                    <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
-                  </svg>
+              <td class="rate__cell">
+                <span>Розовый фильтр</span>
+                <span class="rate__yes"></span>
               </td>
-              <td class="rate__cell" data-text="Розовый фильтр">
-                  <svg  class="rate__svg rate__svg--yes" id="svg-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-                    <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
-                  </svg>
+              <td class="rate__cell" >
+                <span>Розовый фильтр</span>
+                <span class="rate__yes"></span>
               </td>
-              <td class="rate__cell" data-text="Розовый фильтр">
-                  <svg  class="rate__svg rate__svg--yes" id="svg-3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-                    <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
-                  </svg>
+              <td class="rate__cell" >
+                <span>Розовый фильтр</span>
+                <span class="rate__yes"></span>
               </td>
             </tr>
             <tr>
               <td class="rate__item">Смайлики</td>
-              <td class="rate__cell" data-text="Смайлики">
-                <svg  class="rate__svg rate__svg--no" id="svg-4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
-                  <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
-                </svg>
+              <td class="rate__cell" >
+                <span>Смайлики</span>
+                <span class="rate__no"></span>
               </td>
-              <td class="rate__cell" data-text="Смайлики">
-                  <svg  class="rate__svg rate__svg--yes" id="svg-5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-                    <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
-                  </svg>
+              <td class="rate__cell" >
+                <span>Смайлики</span>
+                <span class="rate__yes"></span>
               </td>
-              <td class="rate__cell" data-text="Смайлики">
-                  <svg  class="rate__svg rate__svg--yes" id="svg-6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-                    <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
-                  </svg>
+              <td class="rate__cell" >
+                <span>Смайлики</span>
+                <span class="rate__yes"></span>
               </td>
             </tr>
             <tr>
               <td class="rate__item">Комментарии</td>
-              <td class="rate__cell" data-text="Комментарии">
-                <svg class="rate__svg rate__svg--no" id="svg-7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
-                  <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
-                </svg>
+              <td class="rate__cell" >
+                <span>Комментарии</span>
+                <span class="rate__no"></span>
               </td>
-              <td class="rate__cell" data-text="Комментарии">
-                <svg class="rate__svg rate__svg--no" id="svg-8" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
-                  <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
-                </svg>
+              <td class="rate__cell" >
+                <span>Комментарии</span>
+                <span class="rate__no"></span>
               </td>
-              <td class="rate__cell" data-text="Комментарии">
-                <svg class="rate__svg rate__svg--yes" id="svg-9" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-                  <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
-                </svg>
+              <td class="rate__cell" >
+                <span>Комментарии</span>
+                <span class="rate__yes"></span>
               </td>
             </tr>
           </tbody>
           </table>
-
-
-      <p class="rate__toggles slider-toggles">
-        <button class="rate__toggle btn" type="button">1</button>
-        <button class="rate__toggle btn" type="button">2</button>
-        <button class="rate__toggle btn" type="button">3</button>
-      </p>
-    </div>
+        </div>
+        <div class="slider-toggles container">
+          <input class="visually-hidden button-1" type="radio" id="button-1" name="toggle">
+          <input class="visually-hidden button-2" type="radio" id="button-2" name="toggle" checked="">
+          <input class="visually-hidden button-3" type="radio" id="button-3" name="toggle">
+          <div class="slider-toggles__controls">
+            <label class="slider-toggles__controls-item slider-toggles__controls-item--1" for="button-1" tabindex="0">Первый</label>
+            <label class="slider-toggles__controls-item slider-toggles__controls-item--2" for="button-2" tabindex="0">Второй</label>
+            <label class="slider-toggles__controls-item slider-toggles__controls-item--3" for="button-3" tabindex="0">Третий</label>
+          </div>
     </section>
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
