@@ -85,7 +85,6 @@
   position: relative;
   padding-left: 68px;
   display: flex;
-
   font-weight: 400;
   font-size: 18px;
   line-height: 1.67;
@@ -105,6 +104,18 @@
   border: solid 2px @gray-br;
 }
 
+.contest-form__input--checkbox:hover + .contest-form__label--checkbox::before,
+.contest-form__input--checkbox:focus + .contest-form__label--checkbox::before,
+.contest-form__input--radio:hover + .contest-form__label--radio::before,
+.contest-form__input--radio:focus + .contest-form__label--radio::before {
+  border: 2px solid @header-bg;
+}
+
+.contest-form__input--checkbox:active + .contest-form__label--checkbox::before,
+.contest-form__input--radio:active + .contest-form__label--radio::before {
+  border: 2px solid @pink;
+}
+
 .contest-form__input--checkbox:checked + .contest-form__label--checkbox::after {
   content: "";
   position: absolute;
@@ -115,20 +126,6 @@
   border-bottom: 2px solid @checkbox-pink;
   border-left: 2px solid @checkbox-pink;
   transform: rotate(-41deg);
-}
-
-.contest-form__input--checkbox:hover + .contest-form__label--checkbox::after,
-.contest-form__input--checkbox:active + .contest-form__label--checkbox::after {
-  content: "";
-  position: absolute;
-  background-color: @white;
-}
-
-.contest-form__input--checkbox:focus + .contest-form__label--checkbox::before {
-  content: "";
-  position: absolute;
-  background-color: @white;
-  border: solid 2px @pink;
 }
 
 .contest-form__label--radio::before {
@@ -189,13 +186,26 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
   background-color: @form-btn;
   color: @white;
   text-align: center;
   text-transform: uppercase;
   border: none;
   border-radius: 3px;
+}
+
+.contest-form__button:hover,
+.contest-form__button:focus {
+  background-color: @form_btn__hover;
+}
+
+.contest-form__button:active {
+  color: @white-down;
+}
+
+.contest-form__button:disabled {
+  background-color: @gray-br;
 }
 
 .contest-form__textarea {
@@ -212,7 +222,7 @@
 
 .label-textarea {
   display: block;
-  padding-top: 30px;
+  padding-top: 29px;
   padding-bottom: 12px;
   margin-bottom: 5px;
 }

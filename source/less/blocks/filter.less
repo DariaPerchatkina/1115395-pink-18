@@ -53,10 +53,35 @@
   align-items: center;
 }
 
+.filter__btn--post:hover,
+.filter__btn--post:focus {
+  background-color: @pink;
+  color: @white;
+  outline: none;
+}
+
+.filter__btn--post:active {
+  background-color: @pink;
+  color: @white-down;
+}
+
 .filter__btn--cancel {
   margin-bottom: 41px;
-  border: solid 3px @btn-cancel;
+  border: 3px solid @btn-cancel;
   color: @btn-cancel;
+}
+
+.filter__btn--cancel:hover,
+.filter__btn--cancel:focus {
+  color: @btn-cancel__hover;
+  border: 3px solid @btn-cancel__hover;
+  outline: none;
+}
+
+.filter__btn--cancel:active {
+  background-color: @btn-cancel__hover;
+  color: @white-down;
+  border: 3px solid @transparent;
 }
 
 .footer__link {

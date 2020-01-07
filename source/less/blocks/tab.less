@@ -61,7 +61,7 @@
     position: relative;
     margin-top: 20px;
     margin-bottom: 20px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid @tab-brd__item;
   }
 }
 
@@ -94,7 +94,7 @@
 
 
 .tab__svg {
-  fill: rgba(0, 0, 0, 0.3);
+  fill: @header-desk;
 
   @media (min-width: @tablet-width) {
     fill: @pink;
@@ -104,3 +104,9 @@
 .tab__svg--action {
   fill: @pink;
 }
+
+.tab__svg:focus,
+.tab__svg:hover {
+  fill: @tab-hover;
+}
+
