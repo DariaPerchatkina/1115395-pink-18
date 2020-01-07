@@ -15,7 +15,7 @@
 }
 
 .contest-form__item--radio {
-  padding-bottom: 34px;
+  padding-bottom: 35px;
 }
 
 .contest-form__block {
@@ -64,7 +64,7 @@
   font-size: 14px;
   font-weight: 400;
   padding-top: 38px;
-  padding-bottom: 31px;
+  padding-bottom: 29px;
   padding-left: 25px;
   padding-right: 26px;
   text-transform: uppercase;
@@ -72,8 +72,13 @@
   line-height: 1.29;
 }
 
+.contest-form__legend--inner {
+  padding-bottom: 26px;
+}
+
 .contest-form__wrapper {
   background-color: @advantages-bg;
+  margin-bottom: 10px;
 }
 
 .contest-form__label {
@@ -92,7 +97,7 @@
   content: "";
   display: block;
   position: absolute;
-  left: 0px;
+  left: 0;
   top: -3px;
   width: 36px;
   height: 36px;
@@ -103,10 +108,10 @@
 .contest-form__input--checkbox:checked + .contest-form__label--checkbox::after {
   content: "";
   position: absolute;
-  left: 6px;
-  top: 5px;
+  left: 8px;
+  top: 7px;
   width: 22px;
-  height: 12px;
+  height: 9px;
   border-bottom: 2px solid @checkbox-pink;
   border-left: 2px solid @checkbox-pink;
   transform: rotate(-41deg);
@@ -179,12 +184,12 @@
   display: block;
   padding: 0;
   margin: 0 auto;
-  width: 276px;
-  height: 59px;
+  width: 280px;
+  height: 63px;
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
-  margin-bottom: 46px;
+  margin-bottom: 16px;
   background-color: @form-btn;
   color: @white;
   text-align: center;
@@ -194,26 +199,32 @@
 }
 
 .contest-form__textarea {
-  min-width: 276px;
-  min-height: 176px;
-  margin-top: 19px;
-  margin-bottom: 52px;
+  min-width: 283px;
+  min-height: 200px;
+  padding: 0 16px;
+  padding-left: 19px;
+  padding-top: 14px;
   font-size: 18px;
-  text-align: center;
+  text-align: left;
   line-height: 1.67;
   color: @header-bg;
 }
 
 .label-textarea {
-  padding-top: 17px;
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 12px;
+  margin-bottom: 5px;
 }
 
 .contest-form__text {
-  padding: 0 20px;
+  margin: 0 20px;
+  margin-bottom: 38px;
 }
 
 .contest-form__span {
   display: block;
+  margin-bottom: 15px;
   font-size: 14px;
   font-weight: 400;
   line-height: 2.14;

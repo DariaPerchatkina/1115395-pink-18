@@ -11,6 +11,8 @@
 .tab__input {
   display: none;
   position: absolute;
+  top: 83px;
+  padding-left: 3px;
   left: calc(50% - 125px);
   width: 250px;
   bottom: 20px;
@@ -24,7 +26,29 @@
   }
 }
 
+.tab__input--active::before {
+  content: "";
+  position: absolute;
+  width: 240px;
+  height: 2px;
+  background-color: @header-bg;
+}
+
+.tab__input--active::after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 195px;
+  width: 15px;
+  height: 14px;
+  background-color: @white;
+  border-radius: 50%;
+  border: 2px solid @pink;
+}
+
 .tab__label {
+  position: relative;
+
   @media (min-width: @tablet-width) {
     position: absolute;
     top: -10px;
@@ -55,8 +79,6 @@
   justify-content: space-around;
   align-items: center;
   list-style-type: none;
-
-
 
   @media (min-width: @tablet-width) {
     flex-direction: column;
