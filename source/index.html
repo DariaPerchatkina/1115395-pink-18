@@ -112,7 +112,10 @@
           <a class="effect__link link" href="#">Узнать больше об исследовании</a>
       </div>
     </section>
-    <section class="review">
+    <section class="review slider-toggles container">
+        <input class="visually-hidden button-1" type="radio" id="button-1" name="toggle-review" checked>
+        <input class="visually-hidden button-2" type="radio" id="button-2" name="toggle-review" >
+        <input class="visually-hidden button-3" type="radio" id="button-3" name="toggle-review">
       <h2 class="visually-hidden">Отзывы пользователей</h2>
       <div class="review__wrapper">
       <blockquote class="review__description">
@@ -120,11 +123,7 @@
         <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
         привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
       </blockquote>
-    </div>
-        <div class="slider-toggles container">
-          <input class="visually-hidden button-1" type="radio" id="button-1" name="toggle">
-          <input class="visually-hidden button-2" type="radio" id="button-2" name="toggle" checked="">
-          <input class="visually-hidden button-3" type="radio" id="button-3" name="toggle">
+     </div>
           <div class="slider-toggles__controls slider-toggles__controls--review">
             <label class="slider-toggles__controls-item slider-toggles__controls-item--1" for="button-1" tabindex="0" >Первый</label>
             <label class="slider-toggles__controls-item slider-toggles__controls-item--2" for="button-2" tabindex="0">Второй</label>
@@ -196,14 +195,15 @@
           </table>
         </div>
         <div class="slider-toggles container">
-          <input class="visually-hidden button-1" type="radio" id="button-1" name="toggle">
-          <input class="visually-hidden button-2" type="radio" id="button-2" name="toggle" checked="">
-          <input class="visually-hidden button-3" type="radio" id="button-3" name="toggle">
-          <div class="slider-toggles__controls">
-            <label class="slider-toggles__controls-item slider-toggles__controls-item--1" for="button-1" tabindex="0">Первый</label>
-            <label class="slider-toggles__controls-item slider-toggles__controls-item--2" for="button-2" tabindex="0">Второй</label>
-            <label class="slider-toggles__controls-item slider-toggles__controls-item--3" for="button-3" tabindex="0">Третий</label>
+          <input class="visually-hidden slider-toggles__table1" type="radio" id="toggles-left" name="toggle">
+          <input class="visually-hidden slider-toggles__table2" type="radio" id="toggles-middle" name="toggle" checked="">
+          <input class="visually-hidden slider-toggles__table3" type="radio" id="toggles-right" name="toggle">
+          <div class="slider-toggles__controls slider-toggles__controls--table">
+            <label class="slider-toggles__controls-item slider-toggles__controls-item--12" for="toggles-left" tabindex="0">Первый</label>
+            <label class="slider-toggles__controls-item slider-toggles__controls-item--22" for="toggles-middle" tabindex="0">Второй</label>
+            <label class="slider-toggles__controls-item slider-toggles__controls-item--32" for="toggles-right" tabindex="0">Третий</label>
           </div>
+        </div>
     </section>
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>

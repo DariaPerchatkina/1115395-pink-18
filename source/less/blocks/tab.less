@@ -8,66 +8,53 @@
   }
 }
 
-.tab__input {
-  display: none;
-  position: absolute;
-  top: 83px;
-  padding-left: 3px;
-  left: calc(50% - 125px);
-  width: 250px;
-  bottom: 20px;
+// .tab__input {
+//   display: none;
+//   position: absolute;
+//   top: 83px;
+//   padding-left: 3px;
+//   left: calc(50% - 125px);
+//   width: 250px;
+//   bottom: 20px;
 
-  @media (min-width: 660px) {
-    display: flex;
-    flex-direction: row;
-    position: static;
-    width: 250px;
-    bottom: 20px;
-  }
-}
+//   @media (min-width: 660px) {
+//     display: flex;
+//     flex-direction: row;
+//     position: static;
+//     width: 250px;
+//     bottom: 20px;
+//   }
+// }
 
-.tab__input--active::before {
-  content: "";
-  position: absolute;
-  width: 240px;
-  height: 2px;
-  background-color: @header-bg;
-}
+// .tab__input--active::before {
+//   content: "";
+//   position: absolute;
+//   width: 240px;
+//   height: 2px;
+//   background-color: @header-bg;
+// }
 
-.tab__input--active::after {
-  content: "";
-  position: absolute;
-  top: -6px;
-  left: 195px;
-  width: 15px;
-  height: 14px;
-  background-color: @white;
-  border-radius: 50%;
-  border: 2px solid @pink;
-}
+// .tab__input--active::after {
+//   content: "";
+//   position: absolute;
+//   top: -6px;
+//   left: 195px;
+//   width: 15px;
+//   height: 14px;
+//   background-color: @white;
+//   border-radius: 50%;
+//   border: 2px solid @pink;
+// }
 
-.tab__label {
-  position: relative;
+// .tab__label {
+//   position: relative;
 
-  @media (min-width: @tablet-width) {
-    position: absolute;
-    top: -10px;
-    left: -80px;
-  }
-}
-
-.tab__item {
-  @media (min-width: @tablet-width) {
-    position: relative;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid @tab-brd__item;
-  }
-}
-
-.tab__item--active input {
-  display: block;
-}
+//   @media (min-width: @tablet-width) {
+//     position: absolute;
+//     top: -10px;
+//     left: -80px;
+//   }
+// }
 
 .tab__list {
   position: relative;
@@ -85,6 +72,40 @@
     align-items: center;
   }
 }
+
+.tab__item {
+  @media (min-width: @tablet-width) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid @tab-brd__item;
+  }
+}
+
+.tab__item--active::before {
+  content: "";
+  position: absolute;
+  width: 240px;
+  height: 2px;
+  top: 84px;
+  left: 39px;
+  background-color: @header-bg;
+}
+
+// .tab__item--active input {
+//   display: block;
+// }
+
+.tab__button {
+  position: absolute;
+  top: 78px;
+  right: 73px;
+  width: 10px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid @pink;
+  background-color: @white;
+}
+
 
 .tab__img {
   border: none;

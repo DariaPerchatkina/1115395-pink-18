@@ -14,7 +14,7 @@
   bottom: 14px;
 }
 
-.slider-toggles__controls .slider-toggles__controls-item,
+.slider-toggles__controls--table .slider-toggles__controls-item,
 .slider-toggles__controls--review .slider-toggles__controls-item {
   position: relative;
   display: inline-block;
@@ -24,10 +24,9 @@
   padding: 13px;
   border-radius: 50%;
   cursor: pointer;
-  opacity: 0.3;
 }
 
-.slider-toggles__controls .slider-toggles__controls-item::after,
+.slider-toggles__controls--table .slider-toggles__controls-item::after,
 .slider-toggles__controls--review .slider-toggles__controls-item::after {
   content: "";
   position: absolute;
@@ -37,25 +36,24 @@
   width: 6px;
   height: 6px;
   background-color: @header-bg;
-  opacity: 0.3;
   border-radius: 50%;
 }
 
-.slider-toggles__controls .slider-toggles__controls-item:hover,
-.slider-toggles__controls .slider-toggles__controls-item:focus,
-.slider-toggles__controls--review .slider-toggles__controls-item:hover,
-.slider-toggles__controls--review .slider-toggles__controls-item:focus {
-  opacity: 0.6;
-}
+// .slider-toggles__controls .slider-toggles__controls-item:hover,
+// .slider-toggles__controls .slider-toggles__controls-item:focus,
+// .slider-toggles__controls--review .slider-toggles__controls-item:hover,
+// .slider-toggles__controls--review .slider-toggles__controls-item:focus {
+//   opacity: 0.6;
+// }
 
-.slider-toggles__controls .slider-toggles__controls-item:active,
-.slider-toggles__controls--review .slider-toggles__controls-item:active {
-  opacity: 0.1;
-}
+// .slider-toggles__controls .slider-toggles__controls-item:active,
+// .slider-toggles__controls--review .slider-toggles__controls-item:active {
+//   opacity: 0.1;
+// }
 
-.button-1:checked ~ .slider-toggles__controls .slider-toggles__controls-item--1::before,
-.button-2:checked ~ .slider-toggles__controls .slider-toggles__controls-item--2::before,
-.button-3:checked ~ .slider-toggles__controls .slider-toggles__controls-item--3::before {
+.slider-toggles__table1:checked ~ .slider-toggles__controls--table .slider-toggles__controls-item--12::before,
+.slider-toggles__table2:checked ~ .slider-toggles__controls--table .slider-toggles__controls-item--22::before,
+.slider-toggles__table3:checked ~ .slider-toggles__controls--table .slider-toggles__controls-item--32::before {
   content: "";
   position: absolute;
   left: 57%;
