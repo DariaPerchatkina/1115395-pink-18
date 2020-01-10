@@ -11,7 +11,7 @@
 
 <body>
   <header class="main-header">
-    <a class="main-header__logo link" href="index.html" aria-label="Переход на главную страницу">
+    <a class="main-header__logo link">
       <img class="visually-hidden" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="логотип приложения Pink">
     </a>
     <nav class="main-nav main-nav--opened  main-nav--nojs">
@@ -41,43 +41,33 @@
   </header>
   <main class="page-main">
     <section class="page-main__block container">
-      <header class="page-main__header">
+      <div class="page-main__header">
         <h1 class="page-main__title">Взгляните на жизнь иначе!</h1>
-      </header>
-    <table class="applications">
-      <tr class="applications__list list">
-        <td>
-          <a class="applications__link applications__btn btn-style link" href="#" aria-label="Переход в магазин">
-            Скачать приложение
-          </a>
-        </td>
-      </tr>
-      <tr class="applications__list list">
-        <td class="applications__item">
-          <a class="applications__link applications__link--apple link" href="https://www.apple.com/ru/ios/app-store/" aria-label="AppStore">
-            <img class="applications__img applications__img--apple" src="img/apple-logo-svg.svg"
+      </div>
+      <div class="applications">
+        <a class="applications__link applications__btn btn-style link" href="#" aria-label="Переход в магазин"> Скачать приложение</a>
+          <ul class="applications__list list">
+            <li class="applications__item">
+              <a class="applications__link applications__link--apple link" href="https://www.apple.com/ru/ios/app-store/" aria-label="AppStore">
+              <img class="applications__img applications__img--apple" src="img/apple-logo-svg.svg"
               width="47" height="56" alt="Переход в магазин App Store">
-          </a>
-        </td >
-        <td class="applications__item">
-          <a class="applications__link applications__link--google link" href="https://play.google.com/store" aria-label="GooglePlay">
-            <img class="applications__img applications__img--android" src="img/android-logo-svg.svg"
+              </a>
+            </li class="applications__item">
+            <li class="applications__item">
+              <a class="applications__link applications__link--google link" href="https://play.google.com/store" aria-label="GooglePlay">
+              <img class="applications__img applications__img--android" src="img/android-logo-svg.svg"
               width="43" height="47" alt="Переход в магазин Google Play">
-          </a>
-        </td>
-        <td class="applications__item">
-          <a class="applications__link applications__link--microsoft link" href="https://www.microsoft.com/ru-ru/store/b/home" aria-label="MicrosoftStore">
-            <img class="applications__img applications__img--microsoft" src="img/microsoft-logo-svg.svg"
+              </a>
+            </li>
+            <li class="applications__item">
+              <a class="applications__link applications__link--microsoft link" href="https://www.microsoft.com/ru-ru/store/b/home" aria-label="MicrosoftStore">
+              <img class="applications__img applications__img--microsoft" src="img/microsoft-logo-svg.svg"
               width="44" height="41" alt="Переход в магазин Microsoft Store">
-          </a>
-        </td>
-      </tr>
-      <tr class="applications__list list">
-        <td class="applications__item ">
+              </a>
+            </li>
+          </ul>
           <p class="applications__discription">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-        </td>
-      </tr>
-    </table>
+      </div>
   </section>
   <section class="advantages ">
     <h2 class="visually-hidden">Преимущества </h2>
@@ -113,9 +103,9 @@
       </div>
     </section>
     <section class="review slider-toggles container">
-        <input class="visually-hidden button-1" type="radio" id="button-1" name="toggle-review" checked>
-        <input class="visually-hidden button-2" type="radio" id="button-2" name="toggle-review" >
-        <input class="visually-hidden button-3" type="radio" id="button-3" name="toggle-review">
+        <input class="visually-hidden slider-toggles-left" type="radio" id="button-left" name="toggle-review" checked>
+        <input class="visually-hidden slider-toggles-middle" type="radio" id="button-middle" name="toggle-review" >
+        <input class="visually-hidden slider-toggles-right" type="radio" id="button-right" name="toggle-review">
       <h2 class="visually-hidden">Отзывы пользователей</h2>
       <div class="review__wrapper">
       <blockquote class="review__description">
@@ -125,9 +115,9 @@
       </blockquote>
      </div>
           <div class="slider-toggles__controls slider-toggles__controls--review">
-            <label class="slider-toggles__controls-item slider-toggles__controls-item--1" for="button-1" tabindex="0" >Первый</label>
-            <label class="slider-toggles__controls-item slider-toggles__controls-item--2" for="button-2" tabindex="0">Второй</label>
-            <label class="slider-toggles__controls-item slider-toggles__controls-item--3" for="button-3" tabindex="0">Третий</label>
+            <label class="slider-toggles__controls-item slider-toggles__controls-item--1" for="button-left" tabindex="0" >Первый</label>
+            <label class="slider-toggles__controls-item slider-toggles__controls-item--2" for="button-middle" tabindex="0">Второй</label>
+            <label class="slider-toggles__controls-item slider-toggles__controls-item--3" for="button-right" tabindex="0">Третий</label>
           </div>
     </section>
     <section class="rate">
@@ -195,9 +185,9 @@
           </table>
         </div>
         <div class="slider-toggles container">
-          <input class="visually-hidden slider-toggles__table1" type="radio" id="toggles-left" name="toggle">
-          <input class="visually-hidden slider-toggles__table2" type="radio" id="toggles-middle" name="toggle" checked="">
-          <input class="visually-hidden slider-toggles__table3" type="radio" id="toggles-right" name="toggle">
+          <input class="visually-hidden slider-toggles__table-left" type="radio" id="toggles-left" name="toggle">
+          <input class="visually-hidden slider-toggles__table-middle" type="radio" id="toggles-middle" name="toggle" checked="">
+          <input class="visually-hidden slider-toggles__table-right" type="radio" id="toggles-right" name="toggle">
           <div class="slider-toggles__controls slider-toggles__controls--table">
             <label class="slider-toggles__controls-item slider-toggles__controls-item--12" for="toggles-left" tabindex="0">Первый</label>
             <label class="slider-toggles__controls-item slider-toggles__controls-item--22" for="toggles-middle" tabindex="0">Второй</label>
@@ -232,6 +222,8 @@
 <footer class="footer-main">
   <a class="footer-main__link link" href="#"></a>
 </footer>
+
+
 
 <script>
   var navMain = document.querySelector('.main-nav');

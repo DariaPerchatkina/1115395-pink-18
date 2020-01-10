@@ -96,6 +96,12 @@
     height: 4.3px;
 
     background-color: @white;
+
+    @media (min-width: @tablet-width) {
+      top: -55px;
+      left: 614px;
+    }
+  
   }
 
   &::before {
@@ -105,6 +111,8 @@
   &::after {
     transform: rotate(-45deg);
   }
+
+  
 }
 
 // .main-nav--opened .main-nav__wrapper {
@@ -116,55 +124,55 @@
 //   z-index: 10;
 // }
 
-.main-nav--opened .main-nav__wrapper::before {
-  content: "";
-  top: 0;
-  left: 0;
-  z-index: 2;
-  pointer-events: none;
-  height: 100%;
-}
+// .main-nav--opened .main-nav__wrapper::before {
+//   content: "";
+//   top: 0;
+//   left: 0;
+//   z-index: 2;
+//   pointer-events: none;
+//   height: 100%;
+// }
 
-.main-nav--nojs .main-nav__trigger {
-  display: none;
-}
+// .main-nav--nojs .main-nav__trigger {
+//   display: none;
+// }
 
-.main-nav--nojs .main-nav__wrapper {
-  position: static;
-  min-height: 0;
-}
+// .main-nav--nojs .main-nav__wrapper {
+//   position: static;
+//   min-height: 0;
+// }
 
-.main-nav--nojs .site-list__item {
-  display: block;
-}
+// .main-nav--nojs .site-list__item {
+//   display: block;
+// }
 
-.main-nav--closed .main-nav__trigger::before {
-  content: "";
-  position: absolute;
-  top: 9px;
-  left: -43px;
+// .main-nav--closed .main-nav__trigger::before {
+//   content: "";
+//   position: absolute;
+//   top: 9px;
+//   left: -43px;
 
-  width: 50px;
-  height: 4px;
+//   width: 50px;
+//   height: 4px;
 
-  background-color: @white;
-  box-shadow: 0 10px 0 0 @white, 0 20px 0 0 @white;
-}
+//   background-color: @white;
+//   box-shadow: 0 10px 0 0 @white, 0 20px 0 0 @white;
+// }
 
-.main-nav--closed .main-nav__trigger:hover::before,
-.main-nav--closed .main-nav__trigger:focus::before {
-  background-color: @pink;
-  box-shadow: 0 10px 0 0 @pink, 0 20px 0 0 @pink;
-}
+// .main-nav--closed .main-nav__trigger:hover::before,
+// .main-nav--closed .main-nav__trigger:focus::before {
+//   background-color: @pink;
+//   box-shadow: 0 10px 0 0 @pink, 0 20px 0 0 @pink;
+// }
 
-.main-nav--closed .main-nav__trigger:active::before {
-  background-color: @pink-down;
-  box-shadow: 0 10px 0 0 @pink-down, 0 20px 0 0 @pink-down;
-}
+// .main-nav--closed .main-nav__trigger:active::before {
+//   background-color: @pink-down;
+//   box-shadow: 0 10px 0 0 @pink-down, 0 20px 0 0 @pink-down;
+// }
 
-@media (max-width: @desktop-width) {
-  .main-nav--closed .site-list__item {
-    display: none;
-    min-height: 69px;
-  }
-}
+// @media (max-width: @desktop-width) {
+//   .main-nav--closed .site-list__item {
+//     display: none;
+//     min-height: 69px;
+//   }
+// }
