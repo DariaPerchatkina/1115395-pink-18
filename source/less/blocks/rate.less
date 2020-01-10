@@ -27,8 +27,8 @@
   border-collapse: collapse;
 
   @media (min-width: @tablet-width) {
-    transform: translateX(-4%);
-    width: 677px;
+    transform: translateX(0%);
+    width: 617px;
   }
 
   @media (min-width: @desktop-width) {
@@ -72,7 +72,7 @@
 
   @media (min-width: @tablet-width) {
     width: 152px;
-    background-color: @white;
+    // background-color: @white;
   }
 }
 
@@ -134,6 +134,9 @@
 
   @media (min-width: @tablet-width) {
     border-right: 1px solid white;
+    font-size: 16px;
+    padding: 5px 0;
+    padding-top: 12px;
   }
 }
 
@@ -142,6 +145,10 @@
   font-size: 23px;
   line-height: 1.8;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
 }
 
 .rate__header {
@@ -149,7 +156,7 @@
   border: 2px solid @white;
 
   @media (min-width: @tablet-width) {
-    height: 75px;
+    height: 81px;
     font-size: 16px;
     line-height: 1.88;
   }
@@ -198,4 +205,10 @@
   font-weight: 300;
   line-height: 2.1;
   transform: rotate(-45deg);
+}
+
+.rate__function {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
