@@ -131,15 +131,15 @@
             <div class="tab__tools">
             <div class="tab__effect">
               <ul class="tab__list list">
-                <li class="tab__item tab__item--pruning tab__item--active">
+                <li class="tab__item tab__item--pruning">
                   <label class="tab__label" for="filter__pruning" tabindex="0">
                     <svg class="tab__svg tab__svg--action" id="pruning__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
                       <path fill="none" d="M0,0h48v48H0V0z"/>
                   <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
                 </svg>
                 </label>
-                <input class="visually-hidden tab__input tab__input--active" type="range" id="filter__pruning" name="range">
-                <button class="tab__button"></button>
+                <input class="visually-hidden tab__input " type="range" id="filter__pruning" name="range">
+                <button class="tab__button tab__button--pruning"></button>
               </li>
               <li class="tab__item tab__item--fill">
                 <label class="tab__label" for="filter__fill" tabindex="0">
@@ -150,6 +150,7 @@
                   </svg>
                 </label>
                   <input class="visually-hidden tab__input" type="range" id="filter__fill" name="range">
+                  <button class="tab__button tab__button--fill"></button>
                 </li>
                 <li class="tab__item tab__item--contrast">
                   <label class="tab__label" for="filter__contrast" tabindex="0">
@@ -159,6 +160,7 @@
                   </svg>
                 </label>
                 <input class="visually-hidden tab__input" type="range" id="filter__contrast" name="range">
+                <button class="tab__button tab__button--contrast"></button>
               </li>
           </ul>
           </div>

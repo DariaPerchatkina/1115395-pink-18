@@ -11,8 +11,8 @@
 .tab__list {
   position: relative;
   display: flex;
-  padding-left: 19px;
-  padding-right: 48px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-bottom: 46px;
   padding-bottom: 60px;
   justify-content: space-around;
@@ -23,88 +23,140 @@
     flex-direction: column;
     align-items: flex-start;
     width: 300px;
+    padding: 0;
+    padding-top: 25px;
+    margin-bottom: 31px;
   }
 }
+
+// .tab__item {
+//   @media (min-width: @tablet-width) {
+//     margin-top: 20px;
+//     padding-left: 29px;
+//     margin-bottom: 27px;
+//     border-bottom: 1px solid @tab-brd__item;
+//   }
+// }
+
+// .tab__item--active::before {
+//   content: "";
+//   position: absolute;
+//   width: 240px;
+//   height: 2px;
+//   top: 85px;
+//   left: 19px;
+//   background-color: @header-bg;
+
+//   @media (min-width: @tablet-width) {
+//     display: none;
+//   }
+// }
 
 .tab__item {
+  position: relative;
+  top: -5px;
+  left: 4px;
+
   @media (min-width: @tablet-width) {
-    margin-top: 20px;
-    padding-left: 29px;
-    margin-bottom: 27px;
-    border-bottom: 1px solid @tab-brd__item;
+    padding-bottom: 44px;
   }
 }
 
-.tab__item--active::before {
+.tab__item--pruning::before {
+  display: block;
   content: "";
   position: absolute;
   width: 240px;
   height: 2px;
   top: 85px;
-  left: 19px;
+  left: -21px;
   background-color: @header-bg;
 
   @media (min-width: @tablet-width) {
-    display: none;
+    content: "";
+    position: absolute;
+    width: 202px;
+    height: 2px;
+    top: 11px;
+    left: 56px;
+    background-color: @header-bg;
   }
 }
 
-.tab__item::before {
-  display: none;
-
+.tab__item--fill::before {
   @media (min-width: @tablet-width) {
     display: block;
+    content: "";
+    position: absolute;
+    width: 202px;
+    height: 2px;
+    top: 10px;
+    left: 56px;
+    background-color: @header-bg;
   }
+}
 
-  &--pruning::before {
-    @media (min-width: @tablet-width) {
-      display: block;
-      content: "";
-      position: absolute;
-      width: 203px;
-      height: 2px;
-      top: 31px;
-      left: 99px;
-      background-color: @header-bg;
-    }
+.tab__item--contrast::before {
+  @media (min-width: @tablet-width) {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 202px;
+    height: 2px;
+    top: 6px;
+    left: 56px;
+    background-color: @header-bg;
   }
+}
 
-  &--fill::before {
-    @media (min-width: @tablet-width) {
-      display: block;
-      content: "";
-      position: absolute;
-      width: 200px;
-      height: 2px;
-      top: 104px;
-      left: 101px;
-      background-color: @header-bg;
-    }
-  }
+.tab-form__button {
+  @media (min-width: @tablet-width) {
 
-  &--contrast::before {
-    @media (min-width: @tablet-width) {
-      display: block;
-      content: "";
-      position: absolute;
-      width: 200px;
-      height: 2px;
-      top: 31px;
-      left: 101px;
-      background-color: @header-bg;
-    }
+    width: 260px;
+    margin-left: 24px;
+    padding-top: 0;
   }
 }
 
 .tab__button {
   position: absolute;
   top: 78px;
-  right: 73px;
+  right: -127px;
   width: 10px;
   height: 15px;
   border-radius: 50%;
   border: 2px solid @pink;
   background-color: @white;
+
+  &--pruning {
+    top: 78px;
+    right: -127px;
+
+    @media (min-width: @tablet-width) {
+      top: 4px;
+      right: -191px;
+    }
+  }
+
+  &--fill {
+    display: none;
+
+    @media (min-width: @tablet-width) {
+      display: block;
+      top: 4px;
+      right: -70px;
+    }
+  }
+
+  &--contrast {
+    display: none;
+
+    @media (min-width: @tablet-width) {
+      display: block;
+      top: 0;
+      right: -141px;
+    }
+  }
 }
 
 .tab__img {
@@ -117,8 +169,8 @@
   fill: @header-desk;
 
   @media (min-width: @tablet-width) {
-    width: 22px;
-    height: 22px;
+    width: 26px;
+    height: 24px;
     fill: @pink;
   }
 }

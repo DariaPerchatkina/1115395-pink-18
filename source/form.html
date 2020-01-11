@@ -42,16 +42,16 @@
   <main class="page-inner">
     <section class="page-inner__block">
         <header class="page-inner__header">
-          <h1 class="page-inner__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+          <h1 class="page-inner__title page-inner__title--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
         </header>
     </section>
-        <div class="page-catalog" id="form-p">
-          <h2 class="page-catalog__title page-catalog__title--inner">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
-          <span class="page-catalog__span">Пожалуйста, заполните форму ниже:</span>
-          </h2>
+    <div class="page-catalog" id="form-p">
+      <h2 class="page-catalog__title page-catalog__title--inner">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+      <span class="page-catalog__span">Пожалуйста, заполните форму ниже:</span>
+      </h2>
 
       <form class="contest-form" action="https://echo.htmlacademy.ru/" aria-labelledby="form-p">
-        <fieldset class="contest-form__block">
+        <fieldset class="contest-form__block user user--name">
           <legend class="visually-hidden">ФИО участника конкурса</legend>
           <ul class="contest-form__list list">
             <li class="contest-form__item">
@@ -62,17 +62,17 @@
             <li class="contest-form__item">
               <label class="contest-form__label contest-form__label--main" for="appointment-name">Имя:</label>
               <input class="contest-form__input contest-form__input--main" id="appointment-name" type="text" name="name"
-                placeholder="Введите ваше имя*">
+                placeholder="Введите ваше имя *">
             </li>
             <li class="contest-form__item">
               <label class="contest-form__label contest-form__label--main" for="appointment-patronymic">Отчество:</label>
               <input class="contest-form__input contest-form__input--main" id="appointment-patronymic" type="text" name="patronymic"
-                placeholder="Ну и отчество тоже*">
+                placeholder="Ну и отчество тоже">
             </li>
           </ul>
         </fieldset>
-        <div class="contest-form__wrapper">
-        <fieldset class="contest-form__block form-block">
+
+        <fieldset class="contest-form__block form-block form-block--achievements">
           <legend class="contest-form__legend">Ваши безбашенные достижения в путешествии</legend>
           <ul class="contest-form__list list">
             <li class="contest-form__item contest-form__item--filter">
@@ -113,22 +113,22 @@
             </li>
           </ul>
         </fieldset>
-      </div>
-        <fieldset class="contest-form__block contest-form__block--inner">
-          <legend class="visually-hidden">Контактные данные участника конкурса</legend>
+
+        <fieldset class="contest-form__block user user--contacts contest-form__block--inner">
+          <legend class="contest-form__legend contest-form__legend--contacts">Контактная информация</legend>
           <ul class="contest-form__list list">
-            <li class="contest-form__item">
+            <li class="contest-form__item  contest-form__item--contacts">
               <label class="contest-form__label contest-form__label--main" for="appointment-tel">Номер телефона</label>
-              <input class="contest-form__input contest-form__input--main" id="appointment-tel" type="text" name="tel" placeholder="Номер, пожалуйста">
+              <input class="contest-form__input contest-form__input--main contest-form__input--second" id="appointment-tel" type="text" name="tel" placeholder="Номер, пожалуйста">
             </li>
-            <li class="contest-form__item">
+            <li class="contest-form__item  contest-form__item--contacts">
               <label class="contest-form__label contest-form__label--main" for="appointment-email">Адрес почты</label>
-              <input class="contest-form__input contest-form__input--main" id="appointment-email" type="email" name="email" placeholder="Введите почту*">
+              <input class="contest-form__input contest-form__input--main contest-form__input--second" id="appointment-email" type="email" name="email" placeholder="Введите почту*">
             </li>
           </ul>
         </fieldset>
-        <div class="contest-form__wrapper">
-        <fieldset class="contest-form__block form-block">
+
+        <fieldset class="contest-form__block  form-block form-block--system">
           <legend class="contest-form__legend contest-form__legend--inner ">С каким приложением путешествовали?</legend>
           <ul class="contest-form__list list">
             <li class="contest-form__item contest-form__item--radio">
@@ -151,15 +151,17 @@
             </li>
           </ul>
         </fieldset>
-      </div>
-      <div class="contest-form__text">
-        <label class="contest-form contest-form__legend label-textarea" for="form-textarea">Опишите свои эмоции</label>
+
+      <fieldset class="contest-form__block contest-form__text">
+        <legend class="contest-form contest-form__legend label-textarea" for="form-textarea">Опишите свои эмоции</legend>
         <textarea class="contest-form__textarea" rows="5" cols="6" name="text" id="form-textarea" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-      </div>
+      </fieldset>
+      <div class="contest-form__wrapper">
         <button class="contest-form__button " type="submit">Отправить форму</button>
+        <span class="contest-form__span"><span class="contest-form__star">*</span> — обязательные поля</span>
+      </div>
       </form>
     </div>
-      <span class="contest-form__span"><span class="contest-form__star">*</span> — обязательные поля</span>
   </main>
 
   <footer class="page-footer">
