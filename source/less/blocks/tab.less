@@ -6,6 +6,10 @@
     flex-direction: row;
     flex-wrap: nowrap;
   }
+
+  @media (min-width: @desktop-width) {
+    max-width: 830px;
+  }
 }
 
 .tab__list {
@@ -60,6 +64,12 @@
   @media (min-width: @tablet-width) {
     padding-bottom: 44px;
   }
+
+  @media (min-width: @desktop-width) {
+    top: -15px;
+    left: -5px;
+    padding-bottom: 26px;
+  }
 }
 
 .tab__item--pruning::before {
@@ -73,13 +83,18 @@
   background-color: @header-bg;
 
   @media (min-width: @tablet-width) {
-    content: "";
-    position: absolute;
     width: 202px;
     height: 2px;
     top: 11px;
     left: 56px;
     background-color: @header-bg;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 287px;
+    height: 2px;
+    top: 21px;
+    left: 93px;
   }
 }
 
@@ -94,6 +109,13 @@
     left: 56px;
     background-color: @header-bg;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 287px;
+    height: 2px;
+    top: 18px;
+    left: 93px;
+  }
 }
 
 .tab__item--contrast::before {
@@ -107,14 +129,37 @@
     left: 56px;
     background-color: @header-bg;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 287px;
+    height: 2px;
+    top: 12px;
+    left: 93px;
+  }
 }
 
 .tab-form__button {
   @media (min-width: @tablet-width) {
-
     width: 260px;
     margin-left: 24px;
     padding-top: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    min-width: 410px;
+    margin: 0 auto;
+    padding: 0px 46px;
+  }
+}
+
+.tab__wrapper-button {
+  @media (min-width: @desktop-width) {
+    min-width: 515px;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 41px;
   }
 }
 
@@ -128,6 +173,13 @@
   border: 2px solid @pink;
   background-color: @white;
 
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    max-width: 320px;
+    justify-content: space-between;
+  }
+
   &--pruning {
     top: 78px;
     right: -127px;
@@ -135,6 +187,11 @@
     @media (min-width: @tablet-width) {
       top: 4px;
       right: -191px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 14px;
+      right: -134px;
     }
   }
 
@@ -146,6 +203,11 @@
       top: 4px;
       right: -70px;
     }
+
+    @media (min-width: @desktop-width) {
+      top: 11px;
+      right: -310px;
+    }
   }
 
   &--contrast {
@@ -155,6 +217,11 @@
       display: block;
       top: 0;
       right: -141px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 5px;
+      right: -223px;
     }
   }
 }
@@ -172,6 +239,11 @@
     width: 26px;
     height: 24px;
     fill: @pink;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 44px;
+    height: 44px;
   }
 }
 
@@ -191,10 +263,19 @@
     padding: 0 20px;
     max-width: 300px;
   }
+
+  @media (min-width: @desktop-width) {
+    min-width: 450px;
+  }
 }
 
 .tab__effect {
   @media (min-width: @tablet-width) {
     padding-top: 8px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 auto;
+    margin-bottom: 73px;
   }
 }

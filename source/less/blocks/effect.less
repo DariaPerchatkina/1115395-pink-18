@@ -114,3 +114,17 @@
     font-size: 120px;
   }
 }
+
+.effect__hour::after {
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: -28px;
+    left: -55px;
+    content: "";
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 15px solid @pink;
+    background-color: @white;
+  }
+}

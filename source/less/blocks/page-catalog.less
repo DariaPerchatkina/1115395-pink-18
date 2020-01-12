@@ -9,6 +9,11 @@
   font-weight: normal;
   line-height: 2.14;
   text-align: center;
+
+  @media (min-width: @desktop-width) {
+    padding-top: 20px;
+    margin-bottom: 0;
+  }
 }
 
 .page-catalog__main {
@@ -53,6 +58,10 @@
     margin: 0;
     margin-right: 20px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 54px;
+  }
 }
 
 .page-catalog__item:nth-child(2n) {
@@ -70,6 +79,7 @@
   @media (min-width: @desktop-width) {
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 15px;
   }
 }
 
@@ -190,7 +200,9 @@
   @media (min-width: @desktop-width) {
     font-size: 18px;
     line-height: 1.67;
-    max-width: 568px;
+    margin: 0 auto;
+    max-width: 702px;
+    padding-bottom: 88px;
   }
 }
 
@@ -257,6 +269,10 @@
     margin-left: 0;
     margin-right: 0;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .page-catalog__blockquote--main {
@@ -278,6 +294,13 @@
     padding-left: 28px;
     margin-bottom: 49px;
     padding-bottom: 13px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 940px;
+    min-height: 96px;
+    margin: 0 auto;
+    margin-bottom: 50px;
   }
 }
 
@@ -327,6 +350,10 @@
     font-size: 12px;
     line-height: 2.2;
     color: @pink;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 724px;
   }
 }
 
