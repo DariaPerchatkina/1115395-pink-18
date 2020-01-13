@@ -19,7 +19,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 90px;
+    flex-wrap: nowrap;
   }
 }
 
@@ -32,11 +32,11 @@
   @media (min-width: @desktop-width) {
     padding-top: 16px;
     padding-bottom: 16px;
-    padding-left: 29px;
-    padding-right: 30px;
+    // padding-left: 29px;
+    // padding-right: 30px;
     font-size: 21px;
     line-height: 0.86;
-    margin-bottom: 41px;
+    margin-bottom: 33px;
   }
 }
 
@@ -52,14 +52,16 @@
   outline: none;
 
   @media (min-width: @tablet-width) {
-    width: 300px;
+    min-width: 300px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 14px;
-    padding-bottom: 10px;
+    min-width: 303px;
+    padding-left: 28px;
+    padding-right: 23px;
+    padding-top: 15px;
+    padding-bottom: 34px;
+    margin-bottom: 34px;
   }
 }
 
@@ -87,6 +89,14 @@
 
   @media (min-width: @tablet-width) {
     padding: 0 30px;
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 247px;
+    padding: 0;
+    padding-left: 4px;
+    margin: 0 auto;
     margin-bottom: 10px;
   }
 }
@@ -144,6 +154,10 @@
 
 .applications__link--apple {
   margin-top: 14px;
+
+  @media (min-width: @desktop-width) {
+    margin-top: 16px;
+  }
 }
 
 // .applications__link--microsoft {
