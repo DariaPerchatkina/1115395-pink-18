@@ -24,7 +24,7 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list  list">
           <li class="site-list__item">
-            <a class ="site-list__link link">Главная</a>
+            <a class ="site-list__link link" href="index.html">Главная</a>
               </li>
           <li class="site-list__item">
             <a class ="site-list__link link" href="photo.html">Фотографии</a>
@@ -47,10 +47,7 @@
         </header>
     </section>
     <div class="page-catalog" id="form-p">
-      <h2 class="page-catalog__title page-catalog__title--inner">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
-      <span class="page-catalog__span">Пожалуйста, заполните форму ниже:</span>
-      </h2>
-
+      <h2 class="page-catalog__title page-catalog__title--inner">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<span class="page-catalog__span">Пожалуйста, заполните форму ниже:</span></h2>
       <form class="contest-form" action="https://echo.htmlacademy.ru/" aria-labelledby="form-p">
         <fieldset class="contest-form__block user user--name">
           <legend class="visually-hidden">ФИО участника конкурса</legend>
@@ -74,39 +71,39 @@
         </fieldset>
 
         <fieldset class="contest-form__block form-block form-block--achievements">
-          <legend class="contest-form__legend">Ваши безбашенные достижения в путешествии</legend>
+          <legend class="contest-form__legend contest-form__legend--filter">Ваши безбашенные достижения в путешествии</legend>
           <ul class="contest-form__list list">
-            <li class="contest-form__item contest-form__item--filter">
+            <li class="contest-form__item contest-form__item--filter  contest-form__checkbox--self">
               <input class="visually-hidden contest-form__input contest-form__input--checkbox" name="self" id="form-self"
               type="checkbox" checked>
                   <label class="contest-form__label  contest-form__label--checkbox" for="form-self">Сделал селфи с акулой
                   </label>
             </li>
-            <li class="contest-form__item contest-form__item--filter">
+            <li class="contest-form__item contest-form__item--filter  contest-form__checkbox--burn">
               <input class="visually-hidden contest-form__input contest-form__input--checkbox" name="burn" id="form-burn"
                 type="checkbox" checked>
                 <label class="contest-form__label  contest-form__label--checkbox" for="form-burn">Обгорел на пляже
                 </label>
             </li>
-            <li class="contest-form__item contest-form__item--filter">
+            <li class="contest-form__item contest-form__item--filter  contest-form__checkbox--chack">
               <input class="visually-hidden contest-form__input contest-form__input--checkbox" name="chack" id="form-chack"
                 type="checkbox">
               <label class="contest-form__label  contest-form__label--checkbox" for="form-chack">Видел Чака Норриса
               </label>
             </li>
-            <li class="contest-form__item contest-form__item--filter">
+            <li class="contest-form__item contest-form__item--filter  contest-form__checkbox--souvenir">
               <input class="visually-hidden contest-form__input contest-form__input--checkbox" name="souvenir"
                 id="form-souvenir" type="checkbox">
               <label class="contest-form__label  contest-form__label--checkbox" for="form-souvenir">Накупил сувениров
               </label>
             </li>
-            <li class="contest-form__item contest-form__item--filter">
+            <li class="contest-form__item contest-form__item--filter  contest-form__checkbox--tower">
               <input class="visually-hidden contest-form__input contest-form__input--checkbox" name="tower" id="form-tower"
                 type="checkbox" checked>
               <label class="contest-form__label  contest-form__label--checkbox" for="form-tower">Удержал башню
               </label>
             </li>
-            <li class="contest-form__item contest-form__item--filter">
+            <li class="contest-form__item contest-form__item--filter  contest-form__checkbox--rout">
               <input class="visually-hidden contest-form__input contest-form__input--checkbox" name="rout" id="form-rout"
                 type="checkbox">
               <label class="contest-form__label  contest-form__label--checkbox" for="form-rout">Разгромил отель
@@ -117,13 +114,13 @@
 
         <fieldset class="contest-form__block user user--contacts contest-form__block--inner">
           <legend class="contest-form__legend contest-form__legend--contacts">Контактная информация</legend>
-          <ul class="contest-form__list list">
+          <ul class="contest-form__list contest-form__list--contacts list">
             <li class="contest-form__item  contest-form__item--contacts">
-              <label class="contest-form__label contest-form__label--main" for="appointment-tel">Номер телефона</label>
+              <label class="contest-form__label contest-form__label--main contest-form__label--contacts" for="appointment-tel">Номер телефона</label>
               <input class="contest-form__input contest-form__input--main contest-form__input--second" id="appointment-tel" type="text" name="tel" placeholder="Номер, пожалуйста">
             </li>
             <li class="contest-form__item  contest-form__item--contacts">
-              <label class="contest-form__label contest-form__label--main" for="appointment-email">Адрес почты</label>
+              <label class="contest-form__label contest-form__label--main contest-form__label--contacts" for="appointment-email">Адрес почты</label>
               <input class="contest-form__input contest-form__input--main contest-form__input--second" id="appointment-email" type="email" name="email" placeholder="Введите почту*">
             </li>
           </ul>
@@ -183,7 +180,7 @@
         </a>
       </li>
       <li class="page-footer__item">
-        <div class="page-footer__social footer-social">
+        <div class="page-footer__social footer-social footer-social--inner">
           <a class="footer-social__link link" href="#">
             <span class="visually-hidden">Твиттер</span>
               <svg class="footer-social__img" id="twitter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
