@@ -17,6 +17,7 @@
 }
 
 .page-catalog__main {
+  position: relative;
   background-image: url("../img/panorama-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: auto;
@@ -33,6 +34,33 @@
     background-image: url("../img/panorama-desktop@1x.jpg");
     background-repeat: no-repeat;
     min-height: 506px;
+  }
+}
+
+.page-catalog__main::after {
+  position: absolute;
+  content: "ПАНОРАМА ДНЯ";
+  width: 140px;
+  height: 36px;
+  padding-top: 5px;  
+  background-color: @pink;
+  vertical-align: middle;
+  text-align: center;
+  color: @white;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 2;
+
+  @media (min-width: @tablet-width) {
+    top: 57px;
+    right: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 54px;
+    right: 130px;
+    padding-top: 6px;
   }
 }
 
