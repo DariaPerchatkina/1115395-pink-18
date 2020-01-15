@@ -229,20 +229,24 @@
         <div class="popup__container">
           <h1 class="popup__title">Что-то пошло не так!</h1>
           <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-          <button class="popup__btn btn contest-form__button" type="submit">OK</button>
         </div>
+            <div class="form-modal__wrapper ">
+              <button class="popup__btn btn contest-form__button" type="submit">OK</button>
+            </div>
       </form>
     </div>
   </section>
 
   <section class="contest-form__modal contest-form__modal--sent form-modal modal-show">
     <div class="form-modal__container" >
-      <form  class="" action="https://echo.htmlacademy.ru" method="POST">
-        <div class="popup__container" >
+      <form  class="form-modal__popup form-modal__popup--sent popup" action="https://echo.htmlacademy.ru" method="POST">
+        <div class="popup__container popup__container--sent" >
           <h1  class="popup__title">Ваша заявка отправлена</h1>
             <p class="popup__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее<br> время мы рассмотрим ее и <br>
               оповестим вас.</p>
-              <button class="popup__btn btn contest-form__button" type="submit">ЗАКРЫТЬ ОКНО</button>
+        </div>
+        <div class="form-modal__wrapper form-modal__wrapper--sent">
+          <button class="popup__btn btn contest-form__button" type="submit">ЗАКРЫТЬ ОКНО</button>
         </div>
       </form>
     </div>
