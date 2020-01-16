@@ -1,10 +1,21 @@
 .contest-form__modal {
   position: fixed;
-  right: calc(50% + 583px);
-  top: 50%;
+  right: calc(50% + 587px);
+  top: 44%;
   width: 320px;
   background-color: @white;
   z-index: 12;
+
+  @media (min-width: @tablet-width) {
+    right: calc(50% + 480px);
+  }
+}
+
+.contest-form__modal--sent {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  z-index: 13;
 }
 
 .form-modal__container {
@@ -15,40 +26,75 @@
   flex-direction: column;
   align-items: stretch;
   max-width: 320px;
+  max-height: 289px;
   // padding: 65px 74px 82px 76px;
   background: @white;
   position: absolute;
   z-index: 3;
-  top: -195px;
+  top: -365px;
   right: -743px;
-  box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
+  box-shadow: 0px 7px 15px 0 @modal__shadow;
+
+  @media (min-width: @tablet-width) {
+    min-width: 520px;
+    height: 363px;
+  }
 }
 
 .popup__container {
   max-width: 270px;
-  padding: 46px 24px;
-  margin: 0 auto;
+  // padding: 46px 0;
+  padding-top: 46px;
+  margin-left: 23px;
+  margin-right: 23px;
+  margin-bottom: 20px;
+  padding-bottom: 23px;
   box-sizing: content-box;
   text-align: center;
   display: flex;
   flex-direction: column;
+
+  padding-top: 46px;
+    /* padding-left: 23px; */
+    /* margin-left: 10px; */
+    /* margin-right: 10px; */
+    margin-bottom: 20px;
+    padding-bottom: 23px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 295px;
+    padding: 0;
+  }
 }
 
-.popup__title {
-  font-size: 18px;
-  font-weight: bold;
-  color: @black;
-}
+  .popup__title {
+    margin: 0;
+    margin-bottom: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    color: @black;
 
-.popup__text {
-  font-size: 12px;
-  color: @header-bg;
-  line-height: 1.71;
-  font-weight: 400;
-  margin-bottom: 43px;
-}
+    @media (min-width: @tablet-width) {
+      font-size: 40px;
+
+    }
+  }
+
+  .popup__text {
+    font-size: 14px;
+    color: @header-bg;
+    line-height: 1.71;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 43px;
+
+    @media (min-width: @tablet-width) {
+      font-size: 18px;
+      margin-bottom: 44px;
+    }
+  }
 
 .popup__btn {
-  width: 276px;
+  width: 270px;
   margin-bottom: 6px;
-}
+}  
