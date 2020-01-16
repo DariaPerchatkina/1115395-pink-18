@@ -22,12 +22,10 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
-    display: flex;
-    flex-direction: column;
   }
 
   @media (min-width: @desktop-width) {
-    flex-direction: row;
+    display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
   }
@@ -35,8 +33,6 @@
 
 .contest-form__list--contacts {
   @media (min-width: @desktop-width) {
-    display: flex;
-    flex-direction: row;
     min-width: 898px;
     margin: 0 auto;
   }
@@ -62,7 +58,7 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column-reverse;
-    margin-bottom: 32px;
+    margin-bottom: 22px;
   }
 
   @media (min-width: @desktop-width) {
@@ -133,14 +129,12 @@
     // margin-right: 20px;
     padding: 0;
     padding-top: 6px;
-    margin-bottom: 21px;
+    margin-bottom: 67px;
   }
 
   @media (min-width: @desktop-width) {
     max-width: 435px;
     padding-top: 51px;
-    flex-basis: 960px;
-    margin-right: 20px;
   }
 }
 
@@ -148,8 +142,8 @@
   padding-top: 10px;
 
   @media (min-width: @tablet-width) {
-    // margin: 0 20px;
-    padding-bottom: 26px;
+    margin: 0 20px;
+    padding-bottom: 18px;
     padding-top: 8px;
     margin-bottom: 19px;
     order: 3;
@@ -192,8 +186,6 @@
   @media (min-width: @tablet-width) {
     margin: 0 39px;
     flex-grow: 1;
-    padding-left: 15px;
-    padding-top: 13px;
   }
 
   @media (min-width: @desktop-width) {
@@ -228,12 +220,9 @@
 
 .form-block--achievements {
   @media (min-width: @tablet-width) {
-    display: flex;
-    flex-grow: 1;
     order: 4;
     padding-top: 17px;
     padding-bottom: 25px;
-    margin: 0;
     margin-bottom: 42px;
   }
 
@@ -253,7 +242,7 @@
 .form-block--system {
   @media (min-width: @tablet-width) {
     order: 2;
-    padding-bottom: 46px;
+    padding-bottom: 26px;
     margin: 0;
     margin-bottom: 23px;
     flex-grow: 1;
@@ -277,10 +266,6 @@
   text-transform: uppercase;
   color: @pink;
   line-height: 1.29;
-
-  @media (min-width: @tablet-width) {
-    padding-top: 33px;
-  }
 }
 
 .contest-form__legend--contacts {
@@ -299,10 +284,6 @@
 }
 
 .contest-form__legend--filter {
-  @media (min-width: @tablet-width) {
-    padding-top: 39px;
-  }
-
   @media (min-width: @desktop-width) {
     padding-top: 26px;
     padding-bottom: 26px;
@@ -314,7 +295,6 @@
 
   @media (min-width: @tablet-width) {
     padding-bottom: 34px;
-    padding-top: 38px;
   }
 
   @media (min-width: @desktop-width) {
@@ -338,34 +318,31 @@
   }
 }
 
-.wrapper__radio {
+ .wrapper__radio {
   background-color: @advantages-bg;
 
   @media (min-width: @tablet-width) {
-    display: flex;
-    flex-basis: 369px;
-    justify-content: space-between;
     order: 2;
-    width: 100%;
-    margin: 0;
+    display: flex;
+    justify-content: space-between;
     background-color: @white;
   }
-
+  
   @media (min-width: @desktop-width) {
-    width: 940px;
+    // width: 940px;
     margin: 0;
   }
 }
-
+  
 .wrapper__button {
   background-color: @white;
-
+  
   @media (min-width: @tablet-width) {
     order: 6;
     display: flex;
     justify-content: space-between;
   }
-
+    
   @media (min-width: @desktop-width) {
     width: 940px;
     margin: 0;
@@ -483,11 +460,6 @@
   height: 16px;
   border-radius: 50%;
   background-color: @checkbox-pink;
-
-  @media (min-width: @tablet-width) {
-    top: 8px;
-    left: 20px;
-  }
 }
 
 .contest-form__label--main {
@@ -518,11 +490,6 @@
 }
 
 .contest-form__label--contacts {
-  @media (min-width: @tablet-width) {
-    padding-left: 55px;
-    padding-top: 12px;
-  }
-
   @media (min-width: @desktop-width) {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -590,16 +557,14 @@
 
   @media (min-width: @desktop-width) {
     min-width: 819px;
-    min-height: 120px;
     height: 126px;
-    padding-left: 22px;
-    padding-top: 20px;
-    margin: 13px 20px 47px 35px;
+    min-height: 120px;
+    padding-left: 19px;
+    padding-top: 14px;
+    margin: 17px 40px 46px 38px;
     padding-bottom: 20px;
     padding-right: 16px;
-    line-height: 1.16;
-    box-sizing: border-box;
-    outline: 0;
+
   }
 }
 
