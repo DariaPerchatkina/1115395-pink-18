@@ -19,7 +19,8 @@
     background-color: @header-desk;
     box-shadow: none;
     width: 100%;
-    margin: 0 auto;
+    padding: 0 120px;
+    margin: 0;
   }
 }
 
@@ -39,11 +40,21 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 42px;
-    padding-left: 165px;
+    padding: 0;
+    // padding-top: 42px;
+    // padding-left: 165px;
     // min-width: 197px;
     // .bg-img("logo-pink-white-desktop.svg");
     // background-position-x: 40px;
     // background-position-y: center 5px;
+  }
+}
+
+.main-header__img {
+  @media (min-width: @desktop-width) {
+    width: 147px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 35px;
   }
 }
