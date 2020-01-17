@@ -1,7 +1,7 @@
 .contest-form__modal {
   position: fixed;
   right: calc(50% + 587px);
-  top: 44%;
+  top: 21%;
   width: 320px;
   background-color: @white;
   z-index: 12;
@@ -9,7 +9,7 @@
   @media (min-width: @tablet-width) {
     width: 520px;
     right: calc(50% + 512px);
-    top: 110%;
+    top: 42%;
   }
 
   @media (min-width: @desktop-width) {
@@ -21,14 +21,14 @@
 
 .contest-form__modal--sent {
   position: fixed;
-  left: calc(50% + -160px);
-  top: 51.6%;
+  left: 7%;
+  top: 32.1%;
   z-index: 13;
 
   @media (min-width: @tablet-width) {
     width: 520px;
     right: calc(50% + 480px);
-    top: 54%;
+    top: 47.5%;
     margin: 0 auto;
   }
 
@@ -101,8 +101,12 @@
 }
 
 .popup__container--sent {
-  margin-bottom: 0;
+  margin-bottom: 30px;
   padding-bottom: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: -5px;
+  }
 
   @media (min-width: @desktop-width) {
     margin: 0 auto;
