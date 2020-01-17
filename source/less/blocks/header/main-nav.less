@@ -2,11 +2,12 @@
   background-color: @header-bg;
 
   @media (min-width: @desktop-width) {
-    min-width: 620px;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     background-color: @transparent;
-    margin: 0 auto;
   }
 }
 
@@ -22,7 +23,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 100%;
+    // width: 100%;
     position: absolute;
     min-height: 110px;
     display: flex;
