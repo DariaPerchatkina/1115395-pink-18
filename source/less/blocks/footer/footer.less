@@ -10,11 +10,11 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    min-height: 88px;
     justify-content: space-between;
-    min-height: 127px;
     margin-top: 0;
+    padding: 0 20px;
     padding-top: 16px;
-    padding-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -79,10 +79,11 @@
   @media (min-width: @desktop-width) {
     .bg-img("bg-map-desktop@1x.jpg");
     .size-img(1200px; 976px);
-    background-position-x: -1px;
-    background-position-y: -313px;
+    background-position-x: center;
+    background-position-y: center;
     height: 466px;
     margin-bottom: 56px;
+    overflow: hidden;
   }
 }
 
