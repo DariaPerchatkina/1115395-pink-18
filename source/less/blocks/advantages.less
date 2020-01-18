@@ -9,28 +9,37 @@
 .advantages__attachment {
   background-color: @white;
   min-height: 139px;
-  padding-top: 46px;
+  padding-top: 42px;
   padding-left: 50px;
   padding-right: 50px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 
   @media (min-width: @tablet-width) {
     min-width: 100%;
     padding-left: 20px;
     padding-right: 20px;
+    padding-top: 34px;
+    margin-bottom: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 47px;
+    margin-bottom: 29px;
   }
 }
 
 .advantages__intro {
+  margin: 0;
+  margin-bottom: 32px;
   font-size: 24px;
   font-weight: 300;
+  line-height: 1.2;
   text-align: center;
   color: @header-bg;
-  margin: 0;
-  margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
     font-size: 40px;
+    margin-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -40,33 +49,38 @@
 }
 
 .advantages__intro--second {
+  @media (min-width: @tablet-width) {
+    margin: 0 80px;
+  }
+
   @media (min-width: @desktop-width) {
-    padding: 0 250px;
-    margin-bottom: 55px;
+    // padding: 0 250px;
+    margin: 0 220px;
   }
 }
 
 .advantages__wrapper {
-  padding-top: 40px;
-  min-height: 720px;
+  padding-top: 39px;
+  min-height: 756px;
   align-items: center;
   width: 100%;
   background-color: @advantages-bg;
 
   @media (min-width: @tablet-width) {
-    min-height: 462px;
+    min-height: 482px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 0;
+    padding-top: 25px;
     padding-left: 300px;
   }
 
   @media (min-width: @desktop-width) {
-    width: auto;
     min-height: 610px;
     flex-direction: column;
     padding-left: 0;
+    padding-top: 0;
   }
 }
 
@@ -74,55 +88,91 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
+    // padding-top: 7px;
     // width: 360px;
   }
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
     // /width: auto;
-    margin: 0;
-    padding-left: 180px;
-    padding-right: 180px;
+    width: 940px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 13px;
   }
 }
 
 .advantages__item {
   position: relative;
-  padding: 5px 5px;
-  text-align: center;
-  margin-bottom: 10px;
   min-height: 100px;
+  margin-bottom: 10px;
+  padding: 5px 20px;
+  padding-bottom: 12px;
+  text-align: center;
 
   @media (min-width: @tablet-width) {
     text-align: left;
+    // padding-top: 28px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    padding-right: 15px;
   }
 
   @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    margin-right: 70px;
+    padding: 0;
+    max-width: 300px;
+  }
+}
+
+.advantages__item:first-child {
+  @media (min-width: @desktop-width) {
+    // margin-left: 0;
+    // margin-right: 45px;
+    margin-left: 0;
+    margin-right: 45px;
+    text-align: center;
+    padding-left: 0;
   }
 }
 
 .advantages__item:last-child {
   @media (min-width: @desktop-width) {
     margin-right: 0;
+    margin-left: 45px;
   }
 }
 
 .advantages__item h3 {
+  margin-right: 5px;
+  margin-top: 3px;
+  margin-bottom: 8px;
+  margin-left: 7px;
   font-size: 18px;
   font-weight: 700;
+  line-height: 1.71;
   color: @black;
-  margin: 5px;
-  margin-left: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 0;
+    margin-top: 13px;
+  }
 
   @media (min-width: @desktop-width) {
     font-size: 30px;
     line-height: 1;
     text-align: center;
-    margin: 15px;
-    margin-bottom: 20px;
-    margin-top: 50px;
+    margin-bottom: 24px;
+    margin-left: 9px;
+  }
+}
+
+.advantages__title {
+  @media (min-width: @desktop-width) {
+    padding-left: 15px;
+    padding-right: 20px;
   }
 }
 
@@ -136,8 +186,17 @@
   @media (min-width: @desktop-width) {
     font-size: 18px;
     line-height: 1.67;
+    padding-left: 19px;
+    padding-right: 17px;
   }
 }
+
+// .advantages__item span:last-child {
+//   @media (min-width: @desktop-width) {
+//     padding-left: 28px;
+//     padding-right: 16px;
+//   }
+// }
 
 .advantages__item--mood::before {
   display: none;
@@ -145,11 +204,13 @@
   @media (min-width: @desktop-width) {
     content: "";
     display: block;
-    width: 266px;
-    height: 293px;
+    min-width: 240px;
+    height: 318px;
+    margin-bottom: 43px;
     background-image: url("../img/iphone-screen-1-desktop@1x.png");
     background-repeat: no-repeat;
-    background-position-x: -5px;
+    background-position-x: -6px;
+    background-position-y: 17px;
     box-shadow: 0 7px 7px -9px rgba(0, 0, 0, 0.4);
   }
 }
@@ -160,11 +221,13 @@
   @media (min-width: @desktop-width) {
     content: "";
     display: block;
-    width: 266px;
-    height: 293px;
+    min-width: 240px;
+    height: 318px;
+    margin-bottom: 43px;
     background-image: url("../img/iphone-screen-2-desktop@1x.png");
     background-repeat: no-repeat;
-    background-position-x: -5px;
+    background-position-x: -2px;
+    background-position-y: 17px;
     box-shadow: 0 7px 7px -9px rgba(0, 0, 0, 0.4);
   }
 }
@@ -173,14 +236,16 @@
   content: "";
   display: block;
   position: absolute;
+  top: 124px;
+  right: 80px;
   width: 266px;
-  height: 293px;
+  height: 277px;
+  margin-top: 35px;
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: center -10px;
-  background-size: 70%;
-  margin-top: 35px;
+  background-size: 59%;
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -198,8 +263,8 @@
   @media (min-width: @tablet-width) {
     display: block;
     position: absolute;
-    bottom: -131px;
-    left: -280px;
+    bottom: -104px;
+    left: -279px;
     width: 268px;
     height: 547px;
     background-image: url("../img/iphone-screen-3-tablet@1x.png");
@@ -209,11 +274,13 @@
   @media (min-width: @desktop-width) {
     position: static;
     display: block;
-    width: 266px;
-    height: 293px;
+    min-width: 240px;
+    height: 318px;
+    margin-bottom: 43px;
     background-image: url("../img/iphone-screen-3-desktop@1x.png");
     background-repeat: no-repeat;
-    background-position-x: -5px;
+    background-position-x: -4px;
+    background-position-y: 17px;
     box-shadow: 0 7px 7px -9px rgba(0, 0, 0, 0.4);
   }
 }

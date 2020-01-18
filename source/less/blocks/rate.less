@@ -1,50 +1,47 @@
 .rate {
   position: relative;
-  height: 300px;
+  min-height: 482px;
+  padding-top: 100px;
+  margin-bottom: 41px;
   text-align: center;
   color: @header-bg;
+  background-color: @advantages-bg;
+  overflow: hidden;
 
   @media (min-width: @tablet-width) {
     position: static;
+    min-height: 341px;
     display: flex;
     justify-content: center;
-    background-color: @white-gray;
+    background-color: @advantages-bg;
+    padding-top: 50px;
   }
-}
 
-.rate__cell::before {
-  content: attr(data-text);
-  margin-right: 15px;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 2.14;
-  text-align: left;
-  text-transform: uppercase;
-
-  @media (min-width: @tablet-width) {
-    content: "";
+  @media (min-width: @desktop-width) {
+    min-height: 524px;
+    width: 100%;
+    padding-top: 147px;
+    margin-bottom: 60px;
   }
 }
 
 .rate__table {
   position: absolute;
-  // width: max-content;
-  width: auto;
+  display: table;
+  width: 843px;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  transform: translateX(-10.5%);
-  border: 2px solid @white-gray;
+  transform: translateX(-31%);
+  border: 2px solid @advantages-bg;
   border-collapse: collapse;
 
   @media (min-width: @tablet-width) {
-    transform: translateX(-2.4%);
-    width: 677px;
+    transform: translateX(0%);
+    width: 621px;
   }
 
   @media (min-width: @desktop-width) {
-    transform: translateX(39%);
+    width: 942px;
+    transform: translateX(0%);
   }
 }
 
@@ -56,25 +53,101 @@
   display: none;
 
   @media (min-width: @tablet-width) {
-    display: block;
-    border: 1px solid @gray-br;
+    display: table-cell;
+    width: 153px;
+    border: 2px solid @gray-br;
     border-collapse: collapse;
     font-size: 14px;
     line-height: 2.14;
     font-weight: 400;
     text-transform: none;
-    padding: 5px 0;
+    padding-left: 13px;
+    padding-bottom: 11px;
+    padding-top: 5px;
+    background-color: @white;
+    text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 9px;
+    padding-bottom: 11px;
+    font-size: 18px;
+    padding-left: 20px;
   }
 }
 
 .rate__cell {
-  width: 276px;
-  border: 1px solid @gray-br;
+  position: relative;
+  // display: block;
+  padding: 18px;
+  padding-bottom: 17px;
+  padding-left: 22px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+  text-transform: uppercase;
+  border: 2px solid #e5e5e5;
   border-collapse: collapse;
+  text-align: left;
 
   @media (min-width: @tablet-width) {
     width: 152px;
+    background-color: @white;
+    padding-bottom: 27px;
   }
+}
+
+.rate__yes::after {
+  content: "";
+  position: absolute;
+  left: 231px;
+  top: 19px;
+  width: 28px;
+  height: 14px;
+  border-bottom: 3px solid #3dc644;
+  border-left: 3px solid #3dc644;
+  transform: rotate(-44deg);
+
+  @media (min-width: @tablet-width) {
+    left: 61px;
+    top: 10px;
+    z-index: 2;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 100px;
+    top: 21px;
+  }
+}
+
+.rate__no::before,
+.rate__no::after {
+  content: "";
+  position: absolute;
+  left: 243px;
+  top: 12px;
+  height: 34px;
+  width: 3px;
+  background-color: @no-red;
+
+  @media (min-width: @tablet-width) {
+    left: 73px;
+    top: 4px;
+    z-index: 2;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 113px;
+    top: 13px;
+  }
+}
+
+.rate__no::before {
+  transform: rotate(45deg);
+}
+
+.rate__no::after {
+  transform: rotate(-45deg);
 }
 
 .rate__transparent {
@@ -84,12 +157,15 @@
   @media (min-width: @tablet-width) {
     display: block;
     width: 153px;
-    background-color: @white-gray;
+    background-color: @advantages-bg;
   }
 }
 
 .rate__title {
+  display: table-cell;
   margin: 0;
+  padding: 12px 0;
+  padding-top: 18px;
   background-color: @header-bg;
   color: @white;
   font-size: 18px;
@@ -97,42 +173,131 @@
   text-transform: uppercase;
   text-align: center;
   word-break: break-all;
+  border-left: 2px solid @white;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 8px;
+    padding-top: 6px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    font-size: 16px;
+    border-right: 1px solid white;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 8px;
+    padding-top: 12px;
+    padding-bottom: 9px;
+    padding-left: 6px;
+    font-size: 18px;
+  }
 }
 
 .rate__title span {
   font-weight: 300;
-  font-size: 21px;
+  font-size: 23px;
+  line-height: 1.8;
   text-align: center;
-}
 
-.rate__svg {
-  width: 27px;
-  height: 27px;
-}
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
 
-.rate__svg--yes {
-  fill: @yes-green;
-}
-
-.rate__svg--no {
-  fill: @no-red;
+  @media (min-width: @desktop-width) {
+    display: block;
+    font-size: 24px;
+    padding-bottom: -2px;
+    margin-top: -7px;
+  }
 }
 
 .rate__header {
   color: @white;
-  border: 2px solid @gray-br;
+  border: 2px solid @white;
 
   @media (min-width: @tablet-width) {
-    height: 75px;
+    height: 81px;
     font-size: 16px;
     line-height: 1.88;
+    border: @transparent;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 98px;
   }
 }
 
-.rate__span {
+// .rate__span {
+//   @media (min-width: @tablet-width) {
+//     font-size: 16px;
+//     line-height: 1.67;
+//     font-weight: 300;
+//   }
+// }
+
+.rate__toggles {
+  position: absolute;
+  bottom: -10px;
+  // left: calc((100vh - 220px)/2);
+
   @media (min-width: @tablet-width) {
-    font-size: 16px;
-    line-height: 1.67;
-    font-weight: 300;
+    display: none;
+  }
+}
+
+.rate__hit {
+  position: relative;
+}
+
+.rate__hit::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: -37px;
+  width: 198px;
+  height: 0;
+  border-right: 74px solid transparent;
+  border-bottom: 27px solid @pink;
+  border-left: 26px solid transparent;
+  transform: rotate(-45deg);
+
+  @media (min-width: @tablet-width) {
+    top: -46px;
+    left: -42px;
+    width: 198px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: -29px;
+    left: -42px;
+    width: 173px;
+  }
+}
+
+.rate__text {
+  position: absolute;
+  top: -21px;
+  left: 10px;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 2.1;
+  transform: rotate(-45deg);
+
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+    top: -20px;
+    left: 0;
+    font-weight: 400;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: -17px;
+    left: 1px;
+  }
+}
+
+.rate__function {
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }
